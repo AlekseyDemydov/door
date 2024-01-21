@@ -18,7 +18,7 @@ const Systemopen = () => {
           <div className={s.hover}>
             <img src={penal} alt="" className={s.imgsystem} />
             <div className={s.overlay}></div>
-            <NavLink to="/dvery/system/morepenal" className={s.more}>
+            <NavLink to="/door/system/morepenal" className={s.more}>
               ДЕТАЛЬНІШЕ
             </NavLink>
           </div>
@@ -35,7 +35,7 @@ const Systemopen = () => {
           <div className={s.hover}>
             <img src={kupe} alt="" className={s.imgsystem} />
             <div className={s.overlay}></div>
-            <NavLink to="/dvery/system/morekupe" className={s.more}>
+            <NavLink to="/door/system/morekupe" className={s.more}>
               ДЕТАЛЬНІШЕ
             </NavLink>
           </div>
@@ -55,7 +55,7 @@ const Systemopen = () => {
           <div className={s.hover}>
             <img src={knizhka180} alt="" className={s.imgsystem} />
             <div className={s.overlay}></div>
-            <NavLink to="/dvery/system/book180" className={s.more}>
+            <NavLink to="/door/system/book180" className={s.more}>
               ДЕТАЛЬНІШЕ
             </NavLink>
           </div>
@@ -70,7 +70,7 @@ const Systemopen = () => {
           <div className={s.hover}>
             <img src={knizhka90} alt="" className={s.imgsystem} />
             <div className={s.overlay}></div>
-            <NavLink to="/dvery/system/book90" className={s.more}>
+            <NavLink to="/door/system/book90" className={s.more}>
               ДЕТАЛЬНІШЕ
             </NavLink>
           </div>
@@ -87,7 +87,7 @@ const Systemopen = () => {
           <div className={s.hover}>
             <img src={magic} alt="" className={s.imgsystem} />
             <div className={s.overlay}></div>
-            <NavLink to="/dvery/system/magic" className={s.more}>
+            <NavLink to="/door/system/magic" className={s.more}>
               ДЕТАЛЬНІШЕ
             </NavLink>
           </div>
@@ -104,7 +104,7 @@ const Systemopen = () => {
           <div className={s.hover}>
             <img src={argon} alt="" className={s.imgsystem} />
             <div className={s.overlay}></div>
-            <NavLink to="/dvery/system/argon" className={s.more}>
+            <NavLink to="/door/system/argon" className={s.more}>
               ДЕТАЛЬНІШЕ
             </NavLink>
           </div>
@@ -123,7 +123,7 @@ const Systemopen = () => {
           <div className={s.hover}>
             <img src={prihnar} alt="" className={s.imgsystem} />
             <div className={s.overlay}></div>
-            <NavLink to="/dvery/system/outside" className={s.more}>
+            <NavLink to="/door/system/outside" className={s.more}>
               ДЕТАЛЬНІШЕ
             </NavLink>
           </div>
@@ -140,7 +140,7 @@ const Systemopen = () => {
           <div className={s.hover}>
             <img src={prihinside} alt="" className={s.imgsystem} />
             <div className={s.overlay}></div>
-            <NavLink to="/dvery/system/inside" className={s.more}>
+            <NavLink to="/door/system/inside" className={s.more}>
               ДЕТАЛЬНІШЕ
             </NavLink>
           </div>

@@ -33,7 +33,7 @@ const Header = () => {
       expanded={expanded}
     >
       <Container>
-        <Navbar.Brand className="fs-1" as={Link} to="/dvery">
+        <Navbar.Brand className="fs-1" as={Link} to="/door">
           ЛАОЛА
         </Navbar.Brand>
         <Navbar.Toggle
@@ -43,41 +43,41 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
           <Nav activeKey={location.pathname}>
             <Nav.Link
-              className={handlerActive('/dvery')}
+              className={handlerActive('/door')}
               as={Link}
-              to="/dvery"
+              to="/door"
               onClick={handleNavClick}
             >
               Головна
             </Nav.Link>
             <Nav.Link
-              className={handlerActive('/dvery/catalog')}
+              className={handlerActive('/door/catalog')}
               as={Link}
-              to="/dvery/catalog"
+              to="/door/catalog"
               onClick={handleNavClick}
             >
               Каталог
             </Nav.Link>
             <Nav.Link
-              className={handlerActive('/dvery/system')}
+              className={handlerActive('/door/system')}
               as={Link}
-              to="/dvery/system"
+              to="/door/system"
               onClick={handleNavClick}
             >
               Системи відкривання
             </Nav.Link>
             <Nav.Link
-              className={handlerActive('/dvery/projects')}
+              className={handlerActive('/door/projects')}
               as={Link}
-              to="/dvery/projects"
+              to="/door/projects"
               onClick={handleNavClick}
             >
               Проекти
             </Nav.Link>
             <Nav.Link
-              className={handlerActive('/dvery/contacts')}
+              className={handlerActive('/door/contacts')}
               as={Link}
-              to="/dvery/contacts"
+              to="/door/contacts"
               onClick={handleNavClick}
             >
               Контакти

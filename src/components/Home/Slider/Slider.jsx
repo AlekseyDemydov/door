@@ -26,7 +26,7 @@ export default class HeroSlider extends Component {
             <h2 className={s.infoTitle}>ПЕНАЛ</h2>
             <h2 className={s.infoTitle}>РОЗСУВНА СИСТЕМА</h2>
             <h2 className={s.infoTitle}>ПРИХОВАНОГО МОНТАЖУ</h2>
-            <NavLink className={s.gopenalbtn} to="/dvery/penal">
+            <NavLink className={s.gopenalbtn} to="/door/penal">
               ДЕТАЛЬНІШЕ
             </NavLink>
           </div>
@@ -37,7 +37,7 @@ export default class HeroSlider extends Component {
             <h2 className={s.infoTitle}>КАСКАД</h2>
             <h2 className={s.infoTitle}>РОЗСУВНІ</h2>
             <h2 className={s.infoTitle}>ПЕРЕГОРОДКИ</h2>
-            <NavLink className={s.gopenalbtn} to="/dvery/peregorodki">
+            <NavLink className={s.gopenalbtn} to="/door/peregorodki">
               ДЕТАЛЬНІШЕ
             </NavLink>
           </div>
