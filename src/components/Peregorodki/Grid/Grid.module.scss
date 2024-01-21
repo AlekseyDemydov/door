@@ -1,0 +1,10 @@
+.col {
+  display: block;
+  height: auto;
+}
+.col:not(:last-child){
+  margin-right: 10px;
+}
+.doorimg{
+  width: 100%;
+}

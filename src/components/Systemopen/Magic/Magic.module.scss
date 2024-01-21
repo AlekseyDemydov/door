@@ -1,0 +1,93 @@
+.morePenalContainer {
+    text-align: center;
+    padding-top: 30px;
+  
+    h1 {
+     
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+  
+    h2 {
+        
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+    h4{
+        margin-top: 25px;
+    }
+  
+    p {
+        width: 1000px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+      color: #8c8c8c;
+      text-align: center;
+    }
+  
+    img {
+      max-width: 500px;
+      height: auto;
+      margin-bottom: 20px;
+      margin-right: 30px;
+    }
+  }
+  
+  
+  .textBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    font-size: 18px;
+  }
+  .textColor{
+    color: #8c8c8c;
+  }
+
+  
+// Додана адаптація під мобільні пристрої
+@media screen and (max-width: 401px) {
+    .morePenalContainer {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+  
+      h1 {
+        font-size: 1.5em;
+      }
+  
+      h2 {
+        font-size: 1.2em;
+      }
+  
+      p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 0.9em;
+        
+      }
+  
+      img {
+        max-width: 100%;
+        margin-bottom: 15px;
+        margin-right: 0;
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+    .kupeAnim{
+      max-width: 366px;
+      padding-right: 27px;
+    }
+  }
+  .kupeAnim{
+    width: 1057px;
+    padding-right: 27px;
+  }
+  .resh{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+  }

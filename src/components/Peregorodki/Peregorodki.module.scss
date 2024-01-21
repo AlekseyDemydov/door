@@ -1,0 +1,93 @@
+.peregorodkibox {
+  display: flex;
+  margin-top: 25px;
+  @media screen and (max-width: 401px) {
+    flex-direction: column;
+  }
+}
+.titleper {
+  font-family: 'Gothic A1', sans-serif;
+  margin-bottom: 55px;
+  color: #454545;
+  padding: 15px;
+  font-size: 36px;
+  text-align: left;
+  display: inline-block;
+  border: 2px #292929 solid;
+  letter-spacing: 1.5px;
+}
+.perslider {
+  width: 1325px;
+}
+.infolistper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  padding-right: 165px;
+  @media screen and (max-width: 401px) {
+    padding-right: 0;
+  }
+}
+.infoper {
+  font-family: 'Gothic A1', sans-serif;
+  color: #828282;
+  line-height: 40px;
+  font-size: 25px;
+  list-style-type: none;
+  position: relative;
+  margin-bottom: 20px;
+  @media screen and (max-width: 401px) {
+    line-height: 20px;
+  font-size: 15px;
+  }
+}
+.infoper::before {
+  position: absolute;
+  top: 3px;
+  left: -21px;
+  display: flex;
+  content: '';
+  background: url(./img/rig.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 17px;
+}
+.titletypeper {
+  font-family: 'Gothic A1', sans-serif;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: 3px;
+  color: #333;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.typeinfo {
+  display: flex;
+  justify-content: space-around;
+  @media screen and (max-width: 401px) {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.perslider{
+  @media screen and (max-width: 401px) {
+    max-width: 370px;
+  }
+}
+.typeper{
+  @media screen and (max-width: 401px) {
+    max-width: 370px;
+  }
+}
+.imgType{
+  @media screen and (max-width: 401px) {
+    max-width: 370px;
+  }
+}

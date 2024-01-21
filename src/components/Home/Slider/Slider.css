@@ -1,0 +1,68 @@
+.carousel-status {
+  top: 615px !important;
+  right: 860px !important;
+  font-size: 30px !important;
+  margin: 0 !important;
+  @media screen and (max-width: 401px) {
+    top: 180px !important;
+    left: 150px !important;
+    font-size: 20px !important;
+    width: 70px !important;
+  }
+  
+}
+.control-prev {
+  top: 620px !important;
+  left: 157px !important;
+  background-image: url(../img/Vlevo.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  width: 50px !important;
+  height: 50px !important;
+  padding-right: 130px !important;
+  background-color: white !important;
+  background-position: center !important;
+  @media screen and (max-width: 401px) {
+    top: 180px !important;
+    left: 0px !important;
+    width: 40px !important;
+    height: 40px !important;
+    padding: 0 !important;
+  }
+}
+.control-next {
+  top: 620px !important;
+  left: 300px !important;
+  background-image: url(../img/vpravo.png) !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  height: 50px !important;
+  padding-right: 130px !important;
+  background-position: center !important;
+  width: 50px !important;
+  background-color: white !important;
+  @media screen and (max-width: 401px) {
+    top: 180px !important;
+    left: 300px !important;
+    width: 40px !important;
+    height: 40px !important;
+    padding: 0 !important;
+  }
+}
+.control-next:hover {
+  background-image: url(../img/vpravowhite.png) !important;
+}
+.control-prev:hover {
+  background-image: url(../img/Vlevowhite.png) !important;
+}
+
+.control-arrow::before {
+  content: none !important;
+}
+.control-arrow {
+  opacity: 1 !important;
+}
+.control-arrow:hover {
+  background-color: #8c8c8c !important;
+  stroke: white !important;
+}

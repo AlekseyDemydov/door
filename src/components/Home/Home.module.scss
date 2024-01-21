@@ -1,0 +1,23 @@
+
+.herobox{
+  position: relative;
+  z-index: 99;
+}
+.bgHero {
+  
+  position: absolute;
+  width: 100vw;
+  top: 85px;
+  left: 0px;
+  height: 670.617px;
+  background: linear-gradient(
+    109.6deg,
+    rgb(44, 44, 45) 11.2%,
+    rgb(126, 124, 124) 91.1%
+  );
+  @media screen and (max-width: 401px) {
+    display: none;
+  }
+}
+
+

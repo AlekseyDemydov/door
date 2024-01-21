@@ -1,0 +1,74 @@
+.systembox {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 401px) {
+    flex-direction: column;
+  }
+}
+.systemboxlist {
+  margin-bottom: 25px;
+}
+.more {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 42%;
+  text-decoration: none;
+  color: white;
+  transition: 1s;
+}
+.hover {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    .more {
+      opacity: 1;
+    }
+    .overlay {
+      transform: scale(1.2);
+      opacity: 0.6;
+    }
+
+    .imgsystem {
+      transform: scale(1.2);
+    }
+  }
+}
+.hover:hover {
+  .more {
+    opacity: 1;
+  }
+}
+.overlay {
+  width: 650px;
+  height: 407.25px;
+  position: absolute;
+  background-color: black;
+  opacity: 0;
+  top: 0;
+
+  transition: 1s;
+}
+.imgsystem {
+  width: 650px;
+  transition: 1s;
+  @media screen and (max-width: 401px) {
+    width: 360px;
+    
+  }
+}
+.systeminfo {
+  font-size: 20px;
+  line-height: 28px;
+  width: 580px;
+  padding-top: 25px;
+
+  text-align: justify;
+  color: #454545;
+  font-family: 'Gothic A1', sans-serif;
+  @media screen and (max-width: 401px) {
+    width: 320px;
+    
+  }
+}
