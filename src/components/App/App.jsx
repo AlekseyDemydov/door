@@ -17,7 +17,7 @@ export const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/dvery/*" element={<Layout />}>
+        <Route path="/dvery" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="catalog" element={<Home />} />
