@@ -13,7 +13,7 @@
     border: none;
     z-index: 99;
     transition: .5s;
-    @media screen and (max-width: 401px) {
+    @media screen and (max-width: 480px) {
       top: 357px;
       right: 220px;
     }
@@ -39,7 +39,7 @@
     border: none;
     z-index: 99;
     transition: .5s;
-    @media screen and (max-width: 401px) {
+    @media screen and (max-width: 480px) {
       top: 357px;
       right: 0px;
     }
@@ -50,7 +50,7 @@
     stroke: white;
   }
   .carSlider{
-    @media screen and (max-width: 401px) {
-      max-width: 370px;
+    @media screen and (max-width: 480px) {
+      max-width: 350px;
     }
   }

@@ -1,43 +1,41 @@
 .img {
-    height: 670.625px;
-    margin: 0 auto;
-    @media screen and (max-width: 401px) {
-     height: 220px;
-    }
+  height: 670.625px;
+  margin: 0 auto;
+  @media screen and (max-width: 480px) {
+    max-height: 220px;
   }
-  .infoslider {
-    position: absolute;
-    z-index: 100;
-    top: 10%;
-    left: 20%;
-    color: white;
-    font-size: 38px;
-    text-transform: uppercase;
-    text-align: left;
-    
+}
+.infoslider {
+  position: absolute;
+  z-index: 100;
+  top: 10%;
+  left: 20%;
+  color: white;
+  font-size: 38px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.infoTitle {
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
   }
-  .infoTitle{
-@media screen and (max-width: 401px) {
-     font-size: 18px;
-    }
+}
+.gopenalbtn {
+  cursor: pointer;
+  border: none;
+  background-color: rgba(0, 255, 255, 0);
+  color: white;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+  text-decoration: none;
+  @media screen and (max-width: 480px) {
+    font-size: 13px;
   }
-  .gopenalbtn {
-    cursor: pointer;
-    border: none;
-    background-color: rgba(0, 255, 255, 0);
-    color: white;
-    font-size: 20px;
-    border-bottom: 2px solid white;
-    text-decoration: none;
-    @media screen and (max-width: 401px) {
-     font-size: 13px;
-    }
-  }
-  .gopenalbtn::after {
-    content: '→';
-  }
-  .gopenalbtn:hover {
-    border-bottom: 2px solid rgb(83, 82, 82);
-    color: rgb(83, 82, 82);
-  }
-  
+}
+.gopenalbtn::after {
+  content: '→';
+}
+.gopenalbtn:hover {
+  border-bottom: 2px solid rgb(83, 82, 82);
+  color: rgb(83, 82, 82);
+}

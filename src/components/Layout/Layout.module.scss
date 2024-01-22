@@ -4,9 +4,14 @@
   background-color: var(--bg-color);
   width: 1400px;
   font-family: 'Gothic A1', sans-serif;
-  @media screen and (max-width: 401px) {
-    max-width: 370px;
-    padding: 15px;
+  @media screen and (max-width: 768px) {
+    max-width: 760px;
+    // padding: 15px;
+    margin: 0;
+  }
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+    // padding: 15px;
     margin: 0;
   }
 }

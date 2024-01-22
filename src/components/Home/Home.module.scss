@@ -15,7 +15,8 @@
     rgb(44, 44, 45) 11.2%,
     rgb(126, 124, 124) 91.1%
   );
-  @media screen and (max-width: 401px) {
+  @media screen and (max-width: 768px) { /* Адаптація для планшетів */
+  
     display: none;
   }
 }
