@@ -12,7 +12,7 @@ import six from '../img/bronza.png';
 
 function Gridcolor() {
   return (
-    <Container>
+    <Container className={s.cont}>
       <Row>
         <Col className={s.col}>
           <img src={one} alt="" className={s.doorimg} />{' '}

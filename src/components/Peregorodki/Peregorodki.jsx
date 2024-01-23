@@ -96,7 +96,7 @@ const Peregorodki = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className={s.gridBox}>
         <h1 className={s.titletypeper}>ПРОФІЛЬ І МОДЕЛЬНИЙ РЯД</h1>
         <p>
           В основі виробництва розсувних перегородок закладено систему
@@ -108,7 +108,7 @@ const Peregorodki = () => {
           клієнта (ціна базується від моделі за кількістю перемичок).
         </p>
       </div>
-      <div>
+      <div className={s.gridBox}>
         <h1 className={s.titletypeper}>АЛЮМІНІЄВИЙ ПРОФІЛЬ</h1>
         <Gridcolor />
         <p>

@@ -1,8 +1,13 @@
 .peregorodkibox {
   display: flex;
   margin-top: 25px;
-  @media screen and (max-width: 401px) {
+  @media (min-width: 481px) and (max-width: 768px){
+    width: 90%;
     flex-direction: column;
+  }
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    width: 90%;
   }
 }
 .titleper {
@@ -15,9 +20,15 @@
   display: inline-block;
   border: 2px #292929 solid;
   letter-spacing: 1.5px;
+  @media screen and (max-width: 480px) {
+    margin-left: 20px;
+  }
 }
 .perslider {
   width: 1325px;
+  @media screen and (max-width: 480px) {
+    max-width: 450px;
+  }
 }
 .infolistper {
   list-style: none;
@@ -25,8 +36,15 @@
   margin: 0;
   padding-left: 20px;
   padding-right: 165px;
-  @media screen and (max-width: 401px) {
+  list-style-type: none;
+  @media (min-width: 481px) and (max-width: 768px) {
+    padding-left: 25px;
+  padding-right: 0;
+  }
+  @media screen and (max-width: 480px) {
     padding-right: 0;
+    width: 90%;
+    margin-left: 10px;
   }
 }
 .infoper {
@@ -37,7 +55,7 @@
   list-style-type: none;
   position: relative;
   margin-bottom: 20px;
-  @media screen and (max-width: 401px) {
+  @media screen and (max-width: 480px) {
     line-height: 20px;
   font-size: 15px;
   }
@@ -66,28 +84,70 @@
   margin-bottom: 40px;
   text-transform: uppercase;
   text-align: center;
+  @media (min-width: 481px) and (max-width: 768px) {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 480px) {
+    
+    font-size: 25px;
+  }
 }
 .typeinfo {
   display: flex;
   justify-content: space-around;
-  @media screen and (max-width: 401px) {
+  list-style-type: none;
+  
+  p{
+    width: 500px;
+  }
+  @media (min-width: 481px) and (max-width: 768px){
+    flex-direction: column;
+    p{
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 480px) {
     flex-direction: column;
     padding: 0;
+    
   }
 }
-
+.gridBox{
+  p{
+    text-align: center;
+  }
+  @media (min-width: 481px) and (max-width: 768px){
+    width: 90%;
+      
+    }
+  @media screen and (max-width: 480px) {
+  width: 90%;
+    p{
+      text-align: center;
+    }
+  }
+}
 .perslider{
-  @media screen and (max-width: 401px) {
+  @media (min-width: 481px) and (max-width: 768px){
     max-width: 370px;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 480px) {
+    max-width: 370px;
+    margin: 0 auto; 
   }
 }
 .typeper{
-  @media screen and (max-width: 401px) {
-    max-width: 370px;
+  @media screen and (max-width: 480px) {
+    max-width: 400px;
+    margin: 0 auto;
+    li{
+      list-style-type: none;
+    }
   }
 }
 .imgType{
-  @media screen and (max-width: 401px) {
+  @media screen and (max-width: 480px) {
     max-width: 370px;
   }
 }

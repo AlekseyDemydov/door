@@ -12,7 +12,7 @@ import six from '../img/six.jpg';
 
 function Profilfive() {
   return (
-    <Container>
+    <Container className={s.cont}>
       <Row>
         <Col className={s.col}>
           <img src={one} alt="" className={s.doorimg} />{' '}
@@ -34,8 +34,8 @@ function Profilfive() {
           <img src={five} alt="" className={s.doorimg} />{' '}
           <p>МОДЕЛЬ 5</p>
         </Col>
-        <Col className={s.col}>
-          <img src={six} alt="" className={s.doorimg} />{' '}
+        <Col className={s.colsk}>
+          <img src={six} alt="" className={s.doorimgsk} />{' '}
           <p>РУЧКА СКОБА </p>
         </Col>
       </Row>

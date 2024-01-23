@@ -44,10 +44,7 @@
 .textColor{
   color: #8c8c8c;
 }
-
-
-// Додана адаптація під мобільні пристрої
-@media screen and (max-width: 401px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .morePenalContainer {
     padding-top: 20px;
 
@@ -60,14 +57,42 @@
     }
 
     p {
-      width: 100%;
+      width: 90%;
       max-width: 100%;
       font-size: 0.9em;
       
     }
 
     img {
+      max-width: 90%;
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+  }
+}
+
+// Додана адаптація під мобільні пристрої
+@media screen and (max-width: 480px) {
+  .morePenalContainer {
+    padding-top: 20px;
+
+    h1 {
+      font-size: 1.5em;
+    }
+
+    h2 {
+      font-size: 1.2em;
+    }
+
+    p {
+      width: 90%;
       max-width: 100%;
+      font-size: 0.9em;
+      
+    }
+
+    img {
+      max-width: 90%;
       margin-bottom: 15px;
       margin-right: 0;
     }

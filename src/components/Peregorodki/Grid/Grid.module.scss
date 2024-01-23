@@ -2,9 +2,32 @@
   display: block;
   height: auto;
 }
-.col:not(:last-child){
+.colsk {
+  display: block;
+  height: auto;
+  @media (min-width: 481px) and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.col:not(:last-child) {
   margin-right: 10px;
 }
-.doorimg{
+.doorimg {
   width: 100%;
+}
+.doorimgsk {
+  width: 100%;
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 50%;
+  }
+}
+.cont {
+  @media (min-width: 481px) and (max-width: 768px) {
+    width: 90%;
+  }
+  @media screen and (max-width: 480px) {
+    width: 90%;
+  }
 }
