@@ -1,0 +1,21 @@
+.catalog {
+    display: flex;
+    padding-top: 25px;
+  }
+  
+  .leftBar {
+   width: 40%;
+  }
+  
+.rightBar {
+    width: 60%; /* або будь-який інший розмір, який вам підходить */
+    margin: 0 auto; /* це центрує ваш контейнер на сторінці */
+    
+  }
+  
+  .customImageGallery {
+    .image-gallery-slide {
+      width: 33.33% !important; // Ширина для 3 слайдів в ряду
+      float: left; // Обов'язково встановіть float, щоб розташувати їх в ряд
+    }
+  }
