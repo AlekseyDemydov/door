@@ -5,7 +5,7 @@ import one from '../img/penal.jpg';
 import two from '../img/peregorodka.jpg';
 import s from './Slider.module.scss';
 import { NavLink } from 'react-router-dom';
-import './Slider.css';
+import './Slider.scss';
 
 export default class HeroSlider extends Component {
 

@@ -1,0 +1,72 @@
+.photo-carousel-container {
+    padding: 20px;
+  width: auto;
+  }
+  .slick-track{
+    height: 80%;
+  }
+ 
+  .photo-slider-image-container {
+    display: flex;
+    width: auto;
+  }
+  
+  .photo-slider-image {
+    flex: 1;
+    margin-right: 5px;
+    max-width: 16.3%;
+    border-radius: 5px;
+  }
+
+
+  .carousel-controls {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    font-size: 0; /* Робимо текст невидимим */
+    line-height: 0; /* Встановлюємо висоту рядка 0, щоб усунути відступи */
+    width: 40px; /* Задаємо ширину кнопок */
+    height: 40px; /* Задаємо висоту кнопок */
+    background-color: #f80505; /* Колір фону кнопок */
+    border-radius: 50%; /* Закруглюємо кути, щоб отримати круглі кнопки */
+    display: flex; /* Встановлюємо flex для центрування іконок */
+    align-items: center; /* Центруємо іконки по вертикалі */
+    justify-content: center; /* Центруємо іконки по горизонталі */
+    position: absolute; /* Абсолютне позиціонування */
+    top: 40%; /* Позиціонуємо відносно верхнього краю контейнера */
+    transform: translateY(-50%); /* Центруємо по вертикалі */
+    z-index: 1; /* Задаємо z-index для розміщення поверх інших елементів */
+    cursor: pointer; /* Змінюємо вигляд курсора при наведенні на кнопку */
+    transition: background-color 0.3s ease; /* Плавна анімація для зміни кольору фону */
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    background-color: #555; /* Колір фону при наведенні на кнопку */
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    content: ''; /* Очищаємо текст контенту псевдоелемента */
+    font-family: 'FontAwesome'; /* Використовуємо шрифт FontAwesome (або ваш вибір) */
+    font-size: 18px; /* Розмір іконки */
+    color: #f70d0d; /* Колір іконки */
+  }
+  
+  .slick-prev {
+    left: 10px; /* Розміщуємо кнопку "назад" зліва */
+  
+  }
+  
+  .slick-next {
+    right: 10px; /* Розміщуємо кнопку "вперед" справа */
+   
+  }
