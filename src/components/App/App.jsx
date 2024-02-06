@@ -12,7 +12,7 @@ import Magic from 'components/Systemopen/Magic/Magic';
 import Argon from 'components/Systemopen/Argon/Argon';
 import Inside from 'components/Systemopen/Inside/Inside';
 import Outside from 'components/Systemopen/Outside/Outside';
-import Catalog from 'components/Catalog/Catalog';
+import Project from 'components/Project/Project';
 
 export const App = () => {
   return (
@@ -21,9 +21,9 @@ export const App = () => {
         <Route path="/door" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
-          <Route path="catalog" element={<Catalog />} />
+          <Route path="catalog" element={<Home />} />
           <Route path="system" element={<Systemopen/>} />
-          <Route path="projects" element={<Home />} />
+          <Route path="projects" element={<Project />} />
           <Route path="contacts" element={<Home />} />
           <Route path="penal" element={<Penal/>} />
           <Route path="peregorodki" element={<Peregorodki />} />

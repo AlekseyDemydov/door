@@ -1,7 +1,7 @@
 
 
 import React, { useState } from 'react';
-import s from './Catalog.module.scss';
+import s from './Project.module.scss';
 import PhotoCarousel from './Slider/PhotoCarousel';
 
 const importAll = context => context.keys().map(context);
@@ -22,7 +22,7 @@ const imagesWardrobe = importAll(
   require.context('./img/wardrobe', false, /\.(jpg)$/)
 );
 
-const Catalog = () => {
+const Project = () => {
   const [bigKitchenPhotoIndex, setBigKitchenPhotoIndex] = useState(0);
   const [bigDoorPhotoIndex, setBigDoorPhotoIndex] = useState(0);
   const [bigKomodPhotoIndex, setBigKomodPhotoIndex] = useState(0);
@@ -33,7 +33,7 @@ const Catalog = () => {
   
 
   return (
-    <div className={s.catalog}>
+    <div className={s.project}>
       <div className={s.slide}>
         <div className={s.bigPhoto}>
           <img
@@ -145,5 +145,5 @@ const Catalog = () => {
   );
 };
 
-export default Catalog;
+export default Project;
 
