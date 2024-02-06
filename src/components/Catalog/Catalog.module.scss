@@ -10,8 +10,9 @@
   &:not(:last-child) {
     margin-bottom: 10px;
   }
-  @media screen and (max-width: 480px) { /* Адаптація для мобільних пристроїв */
-    display: block;
+  @media screen and (min-width: 320px) and (max-width: 480px) { /* Адаптація для мобільних пристроїв */
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -30,7 +31,7 @@
 }
 .bigPhoto {
   width: 25%;
-  @media screen and (max-width: 480px) { /* Адаптація для мобільних пристроїв */
+  @media screen and (min-width: 320px) and (max-width: 480px) { /* Адаптація для мобільних пристроїв */
     display: none;
   }
 }
