@@ -1,16 +1,59 @@
 .catalog {
-    display: flex;
-    padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+}
+.slide {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 10px;
   }
-  
-  .leftBar {
-   width: 40%;
+  @media screen and (max-width: 480px) { /* Адаптація для мобільних пристроїв */
+    display: block;
   }
+}
+
+//   .leftBar {
+//    width: 25%;
+//   }
+
+// .rightBar {
+//     width: 75%; /* або будь-який інший розмір, який вам підходить */
+//     margin: 0 auto; /* це центрує ваш контейнер на сторінці */
+
+//   }
+.carusel {
+  width: 75%;
+  margin: 0 auto;
+}
+.bigPhoto {
+  width: 25%;
+}
+.imgBigPhoto {
+  width: 100%;
+  height: 250px;
+
   
-.rightBar {
-    width: 60%; /* або будь-який інший розмір, який вам підходить */
-    margin: 0 auto; /* це центрує ваш контейнер на сторінці */
-    
+}
+.imgBigPhoto.hidden {
+  opacity: 0;
+  animation: fadeInOut 1s ease-in-out alternate forwards;  /* приховати зображення, якщо встановлено клас hidden */
+}
+
+/* Анімація fadeInOut */
+@keyframes fadeInOut {
+  0% {
+    opacity: 1; /* початкова прозорість - 0 (повністю невидиме) */
   }
-  
- 
+  50% {
+    opacity: 0; /* проміжна прозорість - 1 (повністю видиме) */
+  }
+  100% {
+    opacity: 1; /* кінцева прозорість - 0 (повністю невидиме) */
+  }
+}
+
+
+

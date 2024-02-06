@@ -2,6 +2,7 @@
   padding: 20px;
   width: auto;
 }
+
 .slick-track {
   height: 175px;
 }
@@ -9,18 +10,21 @@
 .photo-slider-image-container {
   display: flex;
   width: auto;
+  align-items: center;
 }
 
 .photo-slider-image {
   flex: 1;
   margin-right: 5px;
-  max-width: 16.3%;
+  max-width: 90%;
   border-radius: 5px;
+  cursor: pointer;
+  height: 173.84px;
 }
 
 .custom-button {
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -28,35 +32,34 @@
   z-index: 1;
   background-color: rgba(0, 255, 255, 0);
 }
-.custom-button-next,.custom-button-prev {
 
-  width: 40px; 
-  height: 40px; 
- 
-  border-radius: 50%; 
+.custom-button-next,
+.custom-button-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   border: none;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
- 
-  top: 40%; 
-  transform: translateY(-50%); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
   z-index: 1;
-  cursor: pointer; 
-  transition: background-color 0.3s ease; 
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.custom-button-next{
+.custom-button-next {
   right: 10px;
 }
-.custom-button-prev{
+
+.custom-button-prev {
   left: 10px;
 }
-.custom-button-next:hover{
-  background-color: white;
-}
-.custom-button-prev:hover{
+
+.custom-button-next:hover {
   background-color: white;
 }
 
-
+.custom-button-prev:hover {
+  background-color: white;
+}

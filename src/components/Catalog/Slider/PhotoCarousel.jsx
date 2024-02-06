@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './PhotoCarousel.scss';
 import Modal from '../Modal/Modal';
 
-const PhotoCarousel = ({ images, length }) => {
+const PhotoCarousel = ({ images, length, onChange }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState('');
 
-  const openModal = (image) => {
-    setCurrentImage(image);
+  useEffect(() => {
+    setCurrentImage(images[0]);
+  }, [images]);
+
+  const openModal = (index) => {
+    setCurrentImage(images[index]);
     setModalOpen(true);
   };
 
@@ -19,16 +23,19 @@ const PhotoCarousel = ({ images, length }) => {
     setCurrentImage('');
   };
 
-  const generateImageName = (index) => images[index];
+  const generateImageName = (index) => images[index % images.length];
 
   const settings = {
     dots: false,
     infinite: true,
     speed: 800,
-    slidesToShow: 1,
     slidesToScroll: 1,
+    beforeChange: (current, next) => {
+      if (onChange) {
+        onChange(next);
+      }
+    }
   };
-
   const CustomButton = ({ direction, onClick }) => (
     <button
       className={`custom-button custom-button-${direction}`}
@@ -57,22 +64,34 @@ const PhotoCarousel = ({ images, length }) => {
         className="photo-slider"
         nextArrow={<CustomButton direction="next" />}
         prevArrow={<CustomButton direction="prev" />}
+        slidesToShow={6}
+        responsive={[
+          {
+            breakpoint: 480, // Задаємо breakpoint для екранів шириною менше 480px
+            settings: {
+              slidesToShow: 2 // Задаємо slidesToShow для екранів шириною менше 480px
+            }
+          },
+          {
+            breakpoint: 768, // Задаємо breakpoint для екранів шириною менше 768px
+            settings: {
+              slidesToShow: 4 // Задаємо slidesToShow для екранів шириною менше 768px
+            }
+          }
+        ]}
       >
         {Array.from({ length }, (_, index) => (
           <div
             key={index}
             className="photo-slider-slide"
-            onClick={() => openModal(generateImageName(index))}
+            onClick={() => openModal(index)}
           >
             <div className="photo-slider-image-container">
-              {[0, 1, 2, 3, 4, 5].map((offset) => (
-                <img
-                  key={index + offset}
-                  src={generateImageName(index + offset)}
-                  alt={`${index + offset + 1}`}
-                  className="photo-slider-image"
-                />
-              ))}
+              <img
+                src={generateImageName(index)}
+                alt={`${index + 1}`}
+                className="photo-slider-image"
+              />
             </div>
           </div>
         ))}
