@@ -30,6 +30,9 @@
 }
 .bigPhoto {
   width: 25%;
+  @media screen and (max-width: 480px) { /* Адаптація для мобільних пристроїв */
+    display: none;
+  }
 }
 .imgBigPhoto {
   width: 100%;
