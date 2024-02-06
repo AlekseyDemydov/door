@@ -101,6 +101,12 @@
 .kupeAnim{
   width: 1057px;
   padding-right: 27px;
+  @media screen and (max-width: 480px){
+    display: flex;
+    width: 435px;
+    margin: 0 auto; 
+    padding: 0;
+  }
 }
 .resh{
   font-size: 20px;
