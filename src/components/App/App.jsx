@@ -13,6 +13,7 @@ import Argon from 'components/Systemopen/Argon/Argon';
 import Inside from 'components/Systemopen/Inside/Inside';
 import Outside from 'components/Systemopen/Outside/Outside';
 import Project from 'components/Project/Project';
+import Catalog from 'components/Catalog/Catalog';
 
 export const App = () => {
   return (
@@ -21,7 +22,7 @@ export const App = () => {
         <Route path="/door" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
-          <Route path="catalog" element={<Home />} />
+          <Route path="catalog" element={<Catalog />} />
           <Route path="system" element={<Systemopen/>} />
           <Route path="projects" element={<Project />} />
           <Route path="contacts" element={<Home />} />
