@@ -4,7 +4,7 @@ import РEmain from './img/PEmain.jpeg';
 import { NavLink } from 'react-router-dom';
 import si from './img/s.png';
 import ch from './img/ch.png';
-import PEABS from './img/PEABS.jpg';
+// import PEABS from './img/PEABS.jpg';
 import PЕsilver from './img/PЕsilver.png';
 import PЕblack from './img/PЕblack.png';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
