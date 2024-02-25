@@ -14,6 +14,9 @@ import Inside from 'components/Systemopen/Inside/Inside';
 import Outside from 'components/Systemopen/Outside/Outside';
 import Project from 'components/Project/Project';
 import Catalog from 'components/Catalog/Catalog';
+import M from 'components/Catalog/M/M';
+import PA from 'components/Catalog/PA/PA';
+import PE from 'components/Catalog/PE/PE';
 
 export const App = () => {
   return (
@@ -23,19 +26,22 @@ export const App = () => {
           <Route index element={<Home />} />
           <Route path="home" element={<Home />} />
           <Route path="catalog" element={<Catalog />} />
-          <Route path="system" element={<Systemopen/>} />
+          <Route path="catalog/m" element={<M />} />
+          <Route path="catalog/pa" element={<PA />} />
+          <Route path="catalog/pe" element={<PE />} />
+          <Route path="system" element={<Systemopen />} />
           <Route path="projects" element={<Project />} />
           <Route path="contacts" element={<Home />} />
-          <Route path="penal" element={<Penal/>} />
+          <Route path="penal" element={<Penal />} />
           <Route path="peregorodki" element={<Peregorodki />} />
           <Route path="system/morekupe" element={<MoreKupe />} />
           <Route path="system/morepenal" element={<MorePenal />} />
           <Route path="system/book180" element={<Book180 />} />
           <Route path="system/book90" element={<Book90 />} />
-          <Route path="system/magic" element={<Magic/>} />
-          <Route path="system/argon" element={<Argon/>} />
-          <Route path="system/outside" element={<Outside/>} />
-          <Route path="system/inside" element={<Inside/>} />
+          <Route path="system/magic" element={<Magic />} />
+          <Route path="system/argon" element={<Argon />} />
+          <Route path="system/outside" element={<Outside />} />
+          <Route path="system/inside" element={<Inside />} />
         </Route>
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

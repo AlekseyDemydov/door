@@ -1,13 +1,15 @@
-
-
-
 .catalog {
   padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 50px;
 }
+
 .cardBox {
   position: relative;
-  width: 490px;
   display: flex;
+  // width: 50%; 
+  height: 180px;
   &:hover {
     background-color: rgba(92, 110, 243, 0.399);
     color: white;
@@ -21,50 +23,52 @@
     position: absolute;
     top: 0px;
     left: -5px;
-    width: 5px; /* Ширина смуги */
-    height: 100%; /* Висота, щоб вона розтягувалася на весь висоту блоку */
-    background-color: rgba(0, 179, 255, 0.297); /* Колір смуги */
-    z-index: -1; /* Щоб смуга була під вмістом .cardBox */
+    width: 5px; 
+    height: 100%; 
+    background-color: rgba(0, 179, 255, 0.297); 
+    z-index: -1;
   }
 }
+
 .cardList {
-  width: 330px;
+  
+  width: 100%; /* Змінено ширину на 100% для вирівнювання всередині блоку */
   padding: 15px 20px;
 }
+
 .imgCatalog {
   width: 160px;
 }
+
 .serias {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  // justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   padding: 0 30px;
 }
+
 .more {
-    position: relative;
-    text-decoration: none;
-    color: black;
-    &:hover {
-        color: rgb(237, 21, 21);
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0px; /* Щоб лінія була трохи вище від тексту */
-        left: 0;
-        width: 100%;
-        height: 2px; 
-        // background-color:rgb(234, 16, 16); /* Колір лінії */
-      }
-    }
-  
+  position: relative;
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: rgb(237, 21, 21);
     &::after {
-      content: '>';
+      content: '';
       position: absolute;
-      left: -15px;
-      bottom: 0;
-      z-index: -1;
-      color: black;
+      bottom: 0px; 
+      left: 0;
+      width: 100%;
+      height: 2px; 
     }
-    
   }
+  
+  &::after {
+    content: '>';
+    position: absolute;
+    left: -15px;
+    bottom: 0;
+    z-index: -1;
+    color: black;
+  }   
+}

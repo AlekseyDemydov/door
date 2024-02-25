@@ -1,0 +1,59 @@
+.btnPrev {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    background-image: url(../../../Home/img/Vlevo.png);
+    background-repeat: no-repeat ;
+    background-size: contain ;
+    width: 50px ;
+    height: 50px ;
+    padding-right: 130px;
+    background-color: white;
+    background-position: center;
+    border: none;
+    z-index: 99;
+    transition: .5s;
+    @media screen and (max-width: 480px) {
+      top: 357px;
+      right: 220px;
+    }
+  }
+  .btnPrev:hover {
+    background-image: url(../../../Home/img/Vlevowhite.png);
+    background-color: #8c8c8c;
+    stroke: white;
+  }
+
+  .btnNext {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    background-image: url(../../../Home/img/vpravo.png);
+    background-repeat: no-repeat ;
+    background-size: contain ;
+    width: 50px ;
+    height: 50px ;
+    padding-right: 130px;
+    background-color: white;
+    background-position: center;
+    border: none;
+    z-index: 99;
+    transition: .5s;
+    @media screen and (max-width: 480px) {
+      top: 357px;
+      right: 0px;
+    }
+  }
+  .btnNext:hover {
+    background-image: url(../../../Home/img/vpravowhite.png);
+    background-color: #8c8c8c;
+    stroke: white;
+  }
+  .carSlider{
+    @media (min-width: 481px) and (max-width: 768px){
+      max-width: 450px;
+    }
+    @media screen and (max-width: 480px) {
+      max-width: 450px;
+    }
+  }
