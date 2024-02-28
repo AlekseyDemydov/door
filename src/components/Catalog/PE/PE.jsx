@@ -80,9 +80,9 @@ const PE = () => {
           </div>
         </div>
         <div>
-          {selectedProfile === 'si' && <img src={PЕsilver} alt="" />}{' '}
+          {selectedProfile === 'si' && <img src={PЕsilver} alt="" className={s.imgCoolorDoor}/>}{' '}
           {/* Відображення зображення PAsi, якщо вибрано si */}
-          {selectedProfile === 'ch' && <img src={PЕblack} alt="" />}{' '}
+          {selectedProfile === 'ch' && <img src={PЕblack} alt="" className={s.imgCoolorDoor}/>}{' '}
           {/* Відображення зображення PAch, якщо вибрано ch */}
         </div>
       </div>

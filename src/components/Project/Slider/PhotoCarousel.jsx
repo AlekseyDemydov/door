@@ -69,7 +69,7 @@ const PhotoCarousel = ({ images, length, onChange }) => {
           {
             breakpoint: 480, // Задаємо breakpoint для екранів шириною менше 480px
             settings: {
-              slidesToShow: 2 // Задаємо slidesToShow для екранів шириною менше 480px
+              slidesToShow: 3 // Задаємо slidesToShow для екранів шириною менше 480px
             }
           },
           {

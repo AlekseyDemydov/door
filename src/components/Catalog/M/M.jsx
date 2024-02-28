@@ -26,7 +26,7 @@ const M = () => {
           </div>
         </div>
         <div className={s.perslider}>
-          <DemoCarousel />
+          <DemoCarousel className={s.slider}/>
         </div>
       </div>
       <div className={s.colorBlock}>

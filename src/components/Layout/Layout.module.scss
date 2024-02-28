@@ -1,16 +1,17 @@
 .container {
+  background-color: aqua;
   // padding: 15px 240px;
   margin: 0 auto;
   background-color: var(--bg-color);
   width: 1400px;
   font-family: 'Gothic A1', sans-serif;
-  @media (min-width: 481px) and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     max-width: 760px;
     // padding: 15px;
     margin: 0;
   }
   @media screen and (max-width: 480px) {
-    max-width: 480px;
+    max-width: 400px;
     // padding: 15px;
     margin: 0;
   }
@@ -18,4 +19,8 @@
 .outlet{
   margin-bottom: 70px;
   padding-top: 85px;
+  @media screen and (max-width: 480px) {
+    width: 400px;
+  }
+  
 }

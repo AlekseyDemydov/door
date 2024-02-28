@@ -14,7 +14,7 @@
     z-index: 99;
     transition: .5s;
     @media screen and (max-width: 480px) {
-      top: 357px;
+   bottom: 0;
       right: 220px;
     }
   }
@@ -40,7 +40,7 @@
     z-index: 99;
     transition: .5s;
     @media screen and (max-width: 480px) {
-      top: 357px;
+      bottom: 0;
       right: 0px;
     }
   }

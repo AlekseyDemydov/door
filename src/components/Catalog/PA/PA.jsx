@@ -68,21 +68,21 @@ const PA = () => {
               className={s.imgCoolor}
               src={ch}
               alt="ch"
-              onClick={() => setSelectedProfile('ch')} // Обробник кліку для зображення ch
+              onClick={() => setSelectedProfile('ch')} 
             />
             <img
               className={s.imgCoolor}
               src={si}
               alt="si"
-              onClick={() => setSelectedProfile('si')} // Обробник кліку для зображення si
+              onClick={() => setSelectedProfile('si')} 
             />
           </div>
         </div>
         <div>
-          {selectedProfile === 'si' && <img src={PAsi} alt="" />}{' '}
-          {/* Відображення зображення PAsi, якщо вибрано si */}
-          {selectedProfile === 'ch' && <img src={PAch} alt="" />}{' '}
-          {/* Відображення зображення PAch, якщо вибрано ch */}
+          {selectedProfile === 'si' && <img src={PAsi} alt="" className={s.imgCoolorDoor}/>}{' '}
+       
+          {selectedProfile === 'ch' && <img src={PAch} alt="" className={s.imgCoolorDoor}/>}{' '}
+        
         </div>
       </div>
     </>

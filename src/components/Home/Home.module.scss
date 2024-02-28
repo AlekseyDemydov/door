@@ -1,5 +1,8 @@
 
 .herobox{
+  @media screen and (max-width: 480px) { /* Адаптація для планшетів */
+  width: 390px;
+  }
   position: relative;
   z-index: 99;
 }

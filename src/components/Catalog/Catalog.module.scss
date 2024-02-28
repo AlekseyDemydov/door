@@ -3,6 +3,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 50px;
+  @media screen and (max-width: 480px){
+    grid-template-columns: 1fr;
+  }
 }
 
 .cardBox {
@@ -45,6 +48,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 0 30px;
+  @media screen and (max-width: 480px){
+    grid-template-columns: 1fr;
+  }
 }
 
 .more {
@@ -71,4 +77,9 @@
     z-index: -1;
     color: black;
   }   
+}
+.listTitle{
+  @media screen and (max-width: 480px){
+    font-size:medium;
+  }
 }

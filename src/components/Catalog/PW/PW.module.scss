@@ -160,7 +160,7 @@
 }
 
 .seriasBox {
-  padding-top: 25px;
+  padding-top: 55px;
   display: flex;
   @media screen and (max-width: 480px) {
     padding: 15px;
@@ -195,7 +195,6 @@
 .imgcolor {
   width: 100px;
   height: 100px;
-  background-image: url('./img/PAch.png');
   margin: 20px;
 }
 .imgCoolor {
@@ -210,4 +209,9 @@
     max-width: 115px;
     margin: 0 auto;
   }
+}
+.imgBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
 }
