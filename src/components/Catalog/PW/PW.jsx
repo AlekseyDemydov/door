@@ -19,7 +19,6 @@ import ds from './img/inserDoor/insert/Dub-Sonoma.jpg';
 import dt from './img/inserDoor/insert/Dub_tobaco.jpg';
 import ks from './img/inserDoor/insert/Kashtan_Svetlyy.jpg';
 
-
 import lb from './img/glass/color/lakobelBlack.jpg';
 import lp from './img/glass/color/lakobelPer.jpg';
 import ls from './img/glass/color/lakobelSilver.jpg';
@@ -307,53 +306,50 @@ const imagesGlassz = {
   ),
 };
 
-
 const PW = () => {
   const [selectedColor, setSelectedColor] = useState('Black');
 
   const [selectedImages, setSelectedImages] = useState({});
   const [selectedDoor, setSelectedDoor] = useState(null);
 
-console.log(selectedDoor)
+  console.log(selectedDoor);
   const handleColorSelect = color => {
     setSelectedColor(color);
 
     setSelectedImages(imagesDoor[color]);
   };
-  
+
   const handleInsertSelect = insert => {
     setSelectedDoor(insert);
 
     const key = `${insert}Plus${selectedColor}`;
-    console.log(key)
+    console.log(key);
 
     if (insert === 'ds') {
-        setSelectedImages(imagesInsertds[key]);
-      } else if (insert === 'dt') {
-        setSelectedImages(imagesInsertdt[key]);
-      } else if (insert === 'ks') {
-        setSelectedImages(imagesInsertks[key]);
-      }
-    
-
+      setSelectedImages(imagesInsertds[key]);
+    } else if (insert === 'dt') {
+      setSelectedImages(imagesInsertdt[key]);
+    } else if (insert === 'ks') {
+      setSelectedImages(imagesInsertks[key]);
+    }
   };
-  
+
   const handleGlassSelect = glass => {
     setSelectedDoor(glass);
-  
+
     const key = `${glass}Plus${selectedColor}`;
 
     if (glass === 'lb') {
-        setSelectedImages(imagesGlasslb[key]);
-      } else if (glass === 'lp') {
-        setSelectedImages(imagesGlasslp[key]);
-      } else if (glass === 'ls') {
-        setSelectedImages(imagesGlassls[key]);
-      } else if (glass === 'z') {
-        setSelectedImages(imagesGlassz[key]);
-      } else if (glass === 'lw') {
-        setSelectedImages(imagesGlasslw[key]);
-      }
+      setSelectedImages(imagesGlasslb[key]);
+    } else if (glass === 'lp') {
+      setSelectedImages(imagesGlasslp[key]);
+    } else if (glass === 'ls') {
+      setSelectedImages(imagesGlassls[key]);
+    } else if (glass === 'z') {
+      setSelectedImages(imagesGlassz[key]);
+    } else if (glass === 'lw') {
+      setSelectedImages(imagesGlasslw[key]);
+    }
   };
 
   return (
@@ -450,4 +446,3 @@ console.log(selectedDoor)
 };
 
 export default PW;
-
