@@ -372,7 +372,7 @@ console.log(selectedDoor)
           </div>
         </div>
         <div className={s.perslider}>
-          <img src={PWmain} alt="PWmain" className={s.imgMainPa} />
+          <img src={PWmain} alt="" className={s.imgMainPa} />
         </div>
       </div>
       <div className={s.bgHero}></div>
@@ -397,7 +397,7 @@ console.log(selectedDoor)
                 <img
                   className={s.imgCoolor}
                   src={imagesColor[color]}
-                  alt='qwe'
+                  alt=""
                   onClick={() => handleColorSelect(color)}
                 />
               </OverlayTrigger>
@@ -415,7 +415,7 @@ console.log(selectedDoor)
                 <img
                   className={s.imgCoolor}
                   src={imagesInsert[insert]}
-                  alt='qwe'
+                  alt=""
                   onClick={() => handleInsertSelect(insert)}
                 />
               </OverlayTrigger>
@@ -434,7 +434,7 @@ console.log(selectedDoor)
                 <img
                   className={s.imgCoolor}
                   src={imagesGlass[glass]}
-                  alt='qwe'
+                  alt=""
                   onClick={() => handleGlassSelect(glass)}
                 />
               </OverlayTrigger>
