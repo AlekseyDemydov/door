@@ -23,7 +23,7 @@ const PWcatalog = ({ images }) => {
           <div key={index}>
             <img
               src={image}
-              alt={`Image ${index + 1}`}
+              alt='qwe'
               className="photo-slider-image"
             />
             <p>{getFileNameWithoutExtension(image)}</p>

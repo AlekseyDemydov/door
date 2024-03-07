@@ -19,6 +19,7 @@ import ds from './img/inserDoor/insert/Dub-Sonoma.jpg';
 import dt from './img/inserDoor/insert/Dub_tobaco.jpg';
 import ks from './img/inserDoor/insert/Kashtan_Svetlyy.jpg';
 
+
 import lb from './img/glass/color/lakobelBlack.jpg';
 import lp from './img/glass/color/lakobelPer.jpg';
 import ls from './img/glass/color/lakobelSilver.jpg';
@@ -371,7 +372,7 @@ console.log(selectedDoor)
           </div>
         </div>
         <div className={s.perslider}>
-          <img src={PWmain} alt="РАmain" className={s.imgMainPa} />
+          <img src={PWmain} alt="PWmain" className={s.imgMainPa} />
         </div>
       </div>
       <div className={s.bgHero}></div>
@@ -396,7 +397,7 @@ console.log(selectedDoor)
                 <img
                   className={s.imgCoolor}
                   src={imagesColor[color]}
-                  alt={`Зображення кольору: ${colors}`}
+                  alt='qwe'
                   onClick={() => handleColorSelect(color)}
                 />
               </OverlayTrigger>
@@ -414,7 +415,7 @@ console.log(selectedDoor)
                 <img
                   className={s.imgCoolor}
                   src={imagesInsert[insert]}
-                  alt={`Зображення кольору: ${colors}`}
+                  alt='qwe'
                   onClick={() => handleInsertSelect(insert)}
                 />
               </OverlayTrigger>
@@ -433,7 +434,7 @@ console.log(selectedDoor)
                 <img
                   className={s.imgCoolor}
                   src={imagesGlass[glass]}
-                  alt={`Зображення кольору: ${colors}`}
+                  alt='qwe'
                   onClick={() => handleGlassSelect(glass)}
                 />
               </OverlayTrigger>
