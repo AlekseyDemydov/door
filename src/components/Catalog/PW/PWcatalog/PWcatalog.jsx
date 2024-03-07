@@ -1,36 +1,36 @@
-import React, { useState, useEffect } from 'react';
-import s from './PWcatalog.module.scss'
+import React from 'react';
+import s from './PWcatalog.module.scss';
 
-const PWcatalog = ({ images, length }) => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+const PWcatalog = ({ images }) => {
+  if (!images || !Array.isArray(images)) {
+    return null;
+  }
 
-  useEffect(() => {
-    setCurrentImageIndex(0);
-  }, [images]);
-
-  const getFileNameWithoutExtension = (filePath) => {
+  const getFileNameWithoutExtension = filePath => {
     const fileNameWithExtension = filePath.split('/').pop(); // Отримуємо ім'я файлу з розширенням
     const fileNameWithoutExtension = fileNameWithExtension.split('.')[0]; // Відділяємо ім'я файлу без розширення
     return fileNameWithoutExtension;
   };
 
+  // Вибираємо лише першу половину зображень
+  const halfLength = Math.ceil(images.length / 2);
+  const firstHalfImages = images.slice(0, halfLength);
+
   return (
-    <>
-      {Array.from({ length }, (_, index) => (
-        <div key={index}  className={s.imgBox} >
-          <div>
-            <p>{currentImageIndex}</p>
-            
+    <div className={s.imgBox}>
+      <div>
+        {firstHalfImages.map((image, index) => (
+          <div key={index}>
             <img
-              src={images[index]}
-              alt={`${index + 1}`}
+              src={image}
+              alt={`Image ${index + 1}`}
               className="photo-slider-image"
             />
-            <p>{getFileNameWithoutExtension(images[index])}</p>
+            <p>{getFileNameWithoutExtension(image)}</p>
           </div>
-        </div>
-      ))}
-    </>
+        ))}
+      </div>
+    </div>
   );
 };
 
