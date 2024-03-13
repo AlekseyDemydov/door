@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PWcatalog from './PWcatalog/PWcatalog';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
@@ -31,7 +31,7 @@ const imagesColor = {
   Black: black,
   Creem: creem,
   Grafit: Grafit,
-  Gray: light_gray,
+  LiteGray: light_gray,
   PerWhite: Perlamutr_Belyy,
   Bronze: Perlamutr_Bronza,
   Gold: Perlamutr_Zoloto,
@@ -41,7 +41,7 @@ const colors = {
   Black: 'Чорний',
   Creem: 'Крем',
   Grafit: 'Графіт',
-  Gray: 'лайт грей',
+  LiteGray: 'лайт грей',
   PerWhite: 'Перламутр білий',
   Bronze: 'перламутр бронза',
   Gold: 'перламутр золото',
@@ -82,7 +82,7 @@ const imagesDoor = {
   Creem: importAll(require.context('./img/allDoor/creem', false, /\.(png)$/)),
   Grafit: importAll(require.context('./img/allDoor/Grafit', false, /\.(png)$/)),
   White: importAll(require.context('./img/allDoor/white', false, /\.(png)$/)),
-  Gray: importAll(require.context('./img/allDoor/litegrey', false, /\.(png)$/)),
+  LiteGray: importAll(require.context('./img/allDoor/litegrey', false, /\.(png)$/)),
   PerWhite: importAll(
     require.context('./img/allDoor/perwhite', false, /\.(png)$/)
   ),
@@ -308,22 +308,28 @@ const imagesGlassz = {
 
 const PW = () => {
   const [selectedColor, setSelectedColor] = useState('Black');
-
-  const [selectedImages, setSelectedImages] = useState({});
+  const [selectedName, setSelectedName] = useState('');
+  const [selectedImages, setSelectedImages] = useState('');
   const [selectedDoor, setSelectedDoor] = useState(null);
-
   console.log(selectedDoor);
+
   const handleColorSelect = color => {
     setSelectedColor(color);
 
     setSelectedImages(imagesDoor[color]);
   };
 
+  useEffect(() => {
+    const nameDoor = () => {
+      setSelectedName(imagesDoor['Black']);
+    };
+    nameDoor();
+  }, []);
+
   const handleInsertSelect = insert => {
     setSelectedDoor(insert);
 
     const key = `${insert}Plus${selectedColor}`;
-    console.log(key);
 
     if (insert === 'ds') {
       setSelectedImages(imagesInsertds[key]);
@@ -438,7 +444,7 @@ const PW = () => {
           </div>
         </div>
         <div className={s.imgBox}>
-          <PWcatalog images={selectedImages} />
+          <PWcatalog images={selectedImages} nameDoor={selectedName}/>
         </div>
       </div>
     </>
