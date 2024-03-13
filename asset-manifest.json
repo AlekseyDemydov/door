@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/door/static/css/main.0e4bb95e.css",
-    "main.js": "/door/static/js/main.c8857bc7.js",
+    "main.css": "/door/static/css/main.926caf87.css",
+    "main.js": "/door/static/js/main.c89e7f67.js",
     "static/media/argonAnim.mp4": "/door/static/media/argonAnim.7756d403c4597ef3c397.mp4",
     "static/media/bookAnim.mp4": "/door/static/media/bookAnim.57d31374ae7f7b55d572.mp4",
     "static/media/kupeAnim.mp4": "/door/static/media/kupeAnim.0cf35d68376ba4742b67.mp4",
@@ -128,27 +128,25 @@
     "static/media/18_PW.png": "/door/static/media/18_PW.74fbfde8ae7cd9085001.png",
     "static/media/PWmain.webp": "/door/static/media/PWmain.516c398beef8ca56f3d7.webp",
     "static/media/21PW.png": "/door/static/media/21PW.8d5b46187546a2452fb1.png",
-    "static/media/PW_20_Perlamutrovyy_Bronza.png": "/door/static/media/PW_20_Perlamutrovyy_Bronza.d961c3694df2ac8c20d7.png",
+    "static/media/PW_20.png": "/door/static/media/PW_20.d961c3694df2ac8c20d7.png",
     "static/media/29PW.png": "/door/static/media/29PW.4ca56e42af3df652d74c.png",
-    "static/media/PW_19_Perlamutrovyy_Bronza.png": "/door/static/media/PW_19_Perlamutrovyy_Bronza.33bbbaf0e3cbc71fe446.png",
+    "static/media/PW_19.png": "/door/static/media/PW_19.33bbbaf0e3cbc71fe446.png",
     "static/media/16NA.png": "/door/static/media/16NA.4b0539163c77cc71c507.png",
-    "static/media/18_PW_Perlamutrovyy_Bronza.png": "/door/static/media/18_PW_Perlamutrovyy_Bronza.a17f9af8dd76e0433bd3.png",
     "static/media/12_PW.png": "/door/static/media/12_PW.b42d87c3041419e4805e.png",
-    "static/media/12_PW_Perlamutrovaya_Bronza.png": "/door/static/media/12_PW_Perlamutrovaya_Bronza.b8d3956c39b5fcd54718.png",
     "static/media/threepolotna.jpg": "/door/static/media/threepolotna.91e7f5a5fa3204e4cdeb.jpg",
-    "static/media/PW_27_Perlamutrovyy_Bronza.png": "/door/static/media/PW_27_Perlamutrovyy_Bronza.02f019f40d60fff524cd.png",
+    "static/media/PW_27.png": "/door/static/media/PW_27.02f019f40d60fff524cd.png",
     "static/media/27PW.png": "/door/static/media/27PW.ae872241c983f643f44d.png",
     "static/media/11PM.png": "/door/static/media/11PM.a15f5ac5518fcecd62b9.png",
-    "static/media/PW_26_Perlamutrovyy_Bronza.png": "/door/static/media/PW_26_Perlamutrovyy_Bronza.ad16b40648710ad146e6.png",
+    "static/media/PW_26.png": "/door/static/media/PW_26.ad16b40648710ad146e6.png",
     "static/media/pen7.jpg": "/door/static/media/pen7.e767c8473f957052c0cf.jpg",
     "static/media/26PW.png": "/door/static/media/26PW.fcbd03e7cc0b8dc40f1a.png",
     "static/media/PW21.png": "/door/static/media/PW21.180c65b95c11e41e22c0.png",
-    "static/media/PW_29_bronze-.png": "/door/static/media/PW_29_bronze-.b70c7d84fa1e0ddf029c.png",
+    "static/media/PW_29.png": "/door/static/media/PW_29.b70c7d84fa1e0ddf029c.png",
     "static/media/pen6.jpg": "/door/static/media/pen6.69280de1cf8e0fe6bae1.jpg",
     "static/media/pen8.jpg": "/door/static/media/pen8.69280de1cf8e0fe6bae1.jpg",
     "static/media/30PW.png": "/door/static/media/30PW.fcd793ea898e53eb4e89.png",
     "static/media/5AGP.png": "/door/static/media/5AGP.b3d51ad89bf0aab5e1c8.png",
-    "static/media/PW_1_Perlamutrovyy_Bronza.png": "/door/static/media/PW_1_Perlamutrovyy_Bronza.a7b5f05ad307f773ebfd.png",
+    "static/media/PW_1.png": "/door/static/media/PW_1.a7b5f05ad307f773ebfd.png",
     "static/media/12PW.png": "/door/static/media/12PW.6b1a64704dbcb2f10328.png",
     "static/media/20 PW.png": "/door/static/media/20 PW.4ed0ee197efe3ec7de2f.png",
     "static/media/1ax.png": "/door/static/media/1ax.d62a73a1d3662dfb7030.png",
@@ -156,7 +154,7 @@
     "static/media/28PW.png": "/door/static/media/28PW.f7d2a3fd3cad430f323d.png",
     "static/media/magic5.jpg": "/door/static/media/magic5.2ecf14e8f88836b64c0b.jpg",
     "static/media/6agk.png": "/door/static/media/6agk.ac4b2e9b1c41ed9dd4ce.png",
-    "static/media/PW_30_-bronze-.png": "/door/static/media/PW_30_-bronze-.a84279ce197b89e7ed86.png",
+    "static/media/PW_30.png": "/door/static/media/PW_30.a84279ce197b89e7ed86.png",
     "static/media/argon3.jpg": "/door/static/media/argon3.0d8489e4a5ab7c26986f.jpg",
     "static/media/argon4.jpg": "/door/static/media/argon4.b6bd52e5cc25473e6f3b.jpg",
     "static/media/PW_28.png": "/door/static/media/PW_28.301036cae87fd8be3017.png",
@@ -188,11 +186,11 @@
     "static/media/slick.ttf": "/door/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/door/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/door/index.html",
-    "main.0e4bb95e.css.map": "/door/static/css/main.0e4bb95e.css.map",
-    "main.c8857bc7.js.map": "/door/static/js/main.c8857bc7.js.map"
+    "main.926caf87.css.map": "/door/static/css/main.926caf87.css.map",
+    "main.c89e7f67.js.map": "/door/static/js/main.c89e7f67.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e4bb95e.css",
-    "static/js/main.c8857bc7.js"
+    "static/css/main.926caf87.css",
+    "static/js/main.c89e7f67.js"
   ]
 }
