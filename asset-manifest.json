@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/door/static/css/main.926caf87.css",
-    "main.js": "/door/static/js/main.56df7c15.js",
+    "main.css": "/door/static/css/main.211c763a.css",
+    "main.js": "/door/static/js/main.a04a3ff5.js",
     "static/media/argonAnim.mp4": "/door/static/media/argonAnim.7756d403c4597ef3c397.mp4",
     "static/media/bookAnim.mp4": "/door/static/media/bookAnim.57d31374ae7f7b55d572.mp4",
     "static/media/kupeAnim.mp4": "/door/static/media/kupeAnim.0cf35d68376ba4742b67.mp4",
@@ -109,6 +109,7 @@
     "static/media/PЕsilver.png": "/door/static/media/PЕsilver.74a86135aa04a8f05e16.png",
     "static/media/PAch.png": "/door/static/media/PAch.e3f192c6405ed96c42ae.png",
     "static/media/PЕblack.png": "/door/static/media/PЕblack.e3f192c6405ed96c42ae.png",
+    "static/media/PMmain.jpg": "/door/static/media/PMmain.445e393bbc68bb8e3aaa.jpg",
     "static/media/p4.jpg": "/door/static/media/p4.86da70ad47aff3398046.jpg",
     "static/media/2type.jpg": "/door/static/media/2type.5f91fdccb74609c0ea2b.jpg",
     "static/media/p3.jpg": "/door/static/media/p3.e800402a5567515cf1c1.jpg",
@@ -118,9 +119,13 @@
     "static/media/19PW.png": "/door/static/media/19PW.9251b4663730a2ecd984.png",
     "static/media/19_PW.png": "/door/static/media/19_PW.d477c9f3ca81dbbb9e30.png",
     "static/media/17NЕ.png": "/door/static/media/17NЕ.b71c4a107818d2d8a3b3.png",
+    "static/media/PM_3.2.2.png": "/door/static/media/PM_3.2.2.98375d38755f53b6c491.png",
+    "static/media/PM_2.2.2.png": "/door/static/media/PM_2.2.2.a2e8ce008a43a7a57bb2.png",
     "static/media/pen5.jpg": "/door/static/media/pen5.0602751efc5d27b4efd0.jpg",
+    "static/media/PM_2.3.2.png": "/door/static/media/PM_2.3.2.9ac2bffd061d356a24de.png",
     "static/media/20PW.png": "/door/static/media/20PW.146c2f935f1b819b43cb.png",
     "static/media/pen3.jpg": "/door/static/media/pen3.ff5fbaa7d525c12f5c94.jpg",
+    "static/media/PM_2_2_2.png": "/door/static/media/PM_2_2_2.3d18fb9af409d6bae6d8.png",
     "static/media/pen4.jpg": "/door/static/media/pen4.95ba238ecf9c13fe0491.jpg",
     "static/media/infotypetwo.jpg": "/door/static/media/infotypetwo.f7ad972bb4937db27b01.jpg",
     "static/media/book5.jpg": "/door/static/media/book5.cc4dbbbe75a819d984db.jpg",
@@ -128,11 +133,19 @@
     "static/media/18_PW.png": "/door/static/media/18_PW.74fbfde8ae7cd9085001.png",
     "static/media/PWmain.webp": "/door/static/media/PWmain.516c398beef8ca56f3d7.webp",
     "static/media/21PW.png": "/door/static/media/21PW.8d5b46187546a2452fb1.png",
+    "static/media/PM_2.3.1.png": "/door/static/media/PM_2.3.1.b3795a358b78d95a70d5.png",
+    "static/media/PM_2.4.1.png": "/door/static/media/PM_2.4.1.ca92da1a1255df661660.png",
+    "static/media/PM_2.2.1.png": "/door/static/media/PM_2.2.1.45c17a93034119daaff2.png",
     "static/media/29PW.png": "/door/static/media/29PW.4ca56e42af3df652d74c.png",
+    "static/media/PM_3.2.1.png": "/door/static/media/PM_3.2.1.7531d594ff60f742b093.png",
+    "static/media/PM_2.1.1.png": "/door/static/media/PM_2.1.1.1a374381d484d36f7291.png",
     "static/media/16NA.png": "/door/static/media/16NA.4b0539163c77cc71c507.png",
+    "static/media/PM_3.1.1.png": "/door/static/media/PM_3.1.1.757a771c6131054d8d55.png",
     "static/media/12_PW.png": "/door/static/media/12_PW.b42d87c3041419e4805e.png",
+    "static/media/PM_2_2_1.png": "/door/static/media/PM_2_2_1.4ec77ed5ff952df05560.png",
     "static/media/threepolotna.jpg": "/door/static/media/threepolotna.91e7f5a5fa3204e4cdeb.jpg",
     "static/media/27PW.png": "/door/static/media/27PW.ae872241c983f643f44d.png",
+    "static/media/PM_2_1_1.png": "/door/static/media/PM_2_1_1.a8df5d198240d60eadd6.png",
     "static/media/11PM.png": "/door/static/media/11PM.a15f5ac5518fcecd62b9.png",
     "static/media/26PW.png": "/door/static/media/26PW.fcbd03e7cc0b8dc40f1a.png",
     "static/media/pen7.jpg": "/door/static/media/pen7.e767c8473f957052c0cf.jpg",
@@ -176,11 +189,11 @@
     "static/media/slick.ttf": "/door/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/door/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/door/index.html",
-    "main.926caf87.css.map": "/door/static/css/main.926caf87.css.map",
-    "main.56df7c15.js.map": "/door/static/js/main.56df7c15.js.map"
+    "main.211c763a.css.map": "/door/static/css/main.211c763a.css.map",
+    "main.a04a3ff5.js.map": "/door/static/js/main.a04a3ff5.js.map"
   },
   "entrypoints": [
-    "static/css/main.926caf87.css",
-    "static/js/main.56df7c15.js"
+    "static/css/main.211c763a.css",
+    "static/js/main.a04a3ff5.js"
   ]
 }
