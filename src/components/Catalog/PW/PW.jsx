@@ -382,10 +382,10 @@ const PW = () => {
         <div>
           <div>
             <h3>СЕРІЇ</h3>
-            <NavLink className={s.serias}>PW</NavLink>
-            <h4 className={s.serias}>PM</h4>
-            <h4 className={s.serias}>P</h4>
-            <h4 className={s.serias}>U</h4>
+            <NavLink to="/door/catalog/pw" className={s.serias}>PW</NavLink>
+            <NavLink to="/door/catalog/pm" className={s.serias}>PM</NavLink>
+            <NavLink to="/door/catalog/p" className={s.serias}>P</NavLink>
+            <NavLink to="/door/catalog/u" className={s.serias}>U</NavLink>
           </div>
           <div>
             <h3>КОЛІР</h3>
