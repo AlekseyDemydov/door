@@ -178,7 +178,7 @@ const PM = () => {
       </div>
       <div className={s.bgHero}></div>
       <div className={s.seriasBox}>
-        <div>
+        <div className={s.leftSide}>
           <div>
             <h3>СЕРІЇ</h3>
             <NavLink to="/door/catalog/pw" className={s.serias}>PW</NavLink>

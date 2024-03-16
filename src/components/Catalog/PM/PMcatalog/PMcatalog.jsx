@@ -9,10 +9,11 @@ const PMcatalog = ({ images, nameDoor }) => {
   const getFileNameWithoutExtension = filePath => {
     if (!filePath) return '';
     const fileNameWithExtension = filePath.split('/').pop();
+    // const fileNameWithoutExtension = fileNameWithExtension.split('.')[0];
     const fileNameWithoutExtension = fileNameWithExtension
-      .split('.')[0]
-      // .replace('_', '');
-    return fileNameWithoutExtension;
+      .replace('_', ' ');
+    return fileNameWithoutExtension.slice(0, 8);
+    // return fileNameWithExtension.slice(0, 8); // Повертає лише перші 8 символів
   };
 
   const halfLength = Math.ceil(images.length / 2);
