@@ -19,6 +19,7 @@ import PA from 'components/Catalog/PA/PA';
 import PE from 'components/Catalog/PE/PE';
 import PW from 'components/Catalog/PW/PW';
 import PM from 'components/Catalog/PM/PM';
+import P from 'components/Catalog/P/P';
 
 export const App = () => {
   return (
@@ -33,6 +34,7 @@ export const App = () => {
           <Route path="catalog/pe" element={<PE />} />
           <Route path="catalog/pw" element={<PW />} />
           <Route path="catalog/pm" element={<PM />} />
+          <Route path="catalog/p" element={<P />} />
           <Route path="system" element={<Systemopen />} />
           <Route path="projects" element={<Project />} />
           <Route path="contacts" element={<Home />} />

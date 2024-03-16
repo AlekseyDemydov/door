@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './PMcatalog.module.scss';
+import s from './Pcatalog.module.scss';
 
-const PMcatalog = ({ images, nameDoor }) => {
+const Pcatalog = ({ images, nameDoor }) => {
   if (!images || !Array.isArray(images)) {
     return null;
   }
@@ -57,4 +57,4 @@ const PMcatalog = ({ images, nameDoor }) => {
   );
 };
 
-export default PMcatalog;
+export default Pcatalog;

@@ -382,10 +382,18 @@ const PW = () => {
         <div>
           <div>
             <h3>СЕРІЇ</h3>
-            <NavLink to="/door/catalog/pw" className={s.serias}>PW</NavLink>
-            <NavLink to="/door/catalog/pm" className={s.serias}>PM</NavLink>
-            <NavLink to="/door/catalog/p" className={s.serias}>P</NavLink>
-            <NavLink to="/door/catalog/u" className={s.serias}>U</NavLink>
+            <NavLink to="/door/catalog/pw" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
+              PW
+            </NavLink>
+            <NavLink to="/door/catalog/pm" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
+              PM
+            </NavLink>
+            <NavLink to="/door/catalog/p" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
+              P
+            </NavLink>
+            <NavLink to="/door/catalog/u" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
+              U
+            </NavLink>
           </div>
           <div>
             <h3>КОЛІР</h3>

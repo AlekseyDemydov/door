@@ -2,7 +2,7 @@ import { useLocation } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import './Style.css';
+// import './Style.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -47,6 +47,7 @@ const Header = () => {
               as={Link}
               to="/door"
               onClick={handleNavClick}
+              style={{borderBottom: handlerActive('/door') ? '1px solid rgb(8, 7, 7)' : ''}}
             >
               Головна
             </Nav.Link>
@@ -55,6 +56,7 @@ const Header = () => {
               as={Link}
               to="/door/catalog"
               onClick={handleNavClick}
+              style={{borderBottom: location.pathname.includes('/door/catalog') ? '1px solid rgb(8, 7, 7)' : ''}}
             >
               Каталог
             </Nav.Link>
@@ -63,6 +65,7 @@ const Header = () => {
               as={Link}
               to="/door/system"
               onClick={handleNavClick}
+              style={{borderBottom: location.pathname.includes('/door/system') ? '1px solid rgb(8, 7, 7)' : ''}}
             >
               Системи відкривання
             </Nav.Link>
@@ -71,6 +74,7 @@ const Header = () => {
               as={Link}
               to="/door/projects"
               onClick={handleNavClick}
+              style={{borderBottom: location.pathname.includes('/door/projects') ? '1px solid rgb(8, 7, 7)' : ''}}
             >
               Проекти
             </Nav.Link>
@@ -79,6 +83,7 @@ const Header = () => {
               as={Link}
               to="/door/contacts"
               onClick={handleNavClick}
+              style={{borderBottom: location.pathname.includes('/door/contacts') ? '1px solid rgb(8, 7, 7)' : ''}}
             >
               Контакти
             </Nav.Link>

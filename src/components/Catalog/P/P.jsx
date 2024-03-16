@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import PMcatalog from './PMcatalog/PMcatalog';
+import Pcatalog from './Pcatalog/Pcatalog';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-import PMmain from './img/PMmain.jpg';
+import Pmain from './img/Рmain.jpg';
 
 import creem from './img/allDoor/color/creem.jpg';
 import black from './img/allDoor/color/black.jpg';
@@ -18,7 +18,7 @@ import white from './img/allDoor/color/white.jpg';
 import mt from './img/glass/color/mt.jpg';
 import pr from './img/glass/color/pr.jpg';
 
-import s from './PM.module.scss';
+import s from './P.module.scss';
 
 const imagesColor = {
   Black: black,
@@ -124,7 +124,7 @@ const imagesGlasspr = {
   ),
 };
 
-const PM = () => {
+const P = () => {
   const [selectedColor, setSelectedColor] = useState('Black');
   const [selectedName, setSelectedName] = useState('');
   const [selectedImages, setSelectedImages] = useState('');
@@ -160,20 +160,18 @@ const PM = () => {
     <>
       <div className={s.peregorodkibox}>
         <div className={s.mainBOx}>
-          <h1 className={s.titleper}>МОДЕЛЬ PM</h1>
+          <h1 className={s.titleper}>МОДЕЛЬ P</h1>
           <div>
             <ul className={s.infolistper}>
               <li className={s.infoper}>
-                Під час розробки колекції враховувалися тенденції у створенні
-                екологічно безпечних матеріалів та вектори розвитку сучасного
-                дизайну. Завдяки естетичному вигляду нові моделі дверей ідеально
-                доповнять сучасні класичні інтер'єри.
+                Модельний ряд пропонує вибір царгових дверей як у класичному
+                стилі, так і в сучасному виконанні.
               </li>
             </ul>
           </div>
         </div>
         <div className={s.perslider}>
-          <img src={PMmain} alt="" className={s.imgMainPa} />
+          <img src={Pmain} alt="" className={s.imgMainPa} />
         </div>
       </div>
       <div className={s.bgHero}></div>
@@ -181,10 +179,18 @@ const PM = () => {
         <div className={s.leftSide}>
           <div>
             <h3>СЕРІЇ</h3>
-            <NavLink to="/door/catalog/pw" className={s.serias}>PW</NavLink>
-            <NavLink to="/door/catalog/pm" className={s.serias}>PM</NavLink>
-            <NavLink to="/door/catalog/p" className={s.serias}>P</NavLink>
-            <NavLink to="/door/catalog/u" className={s.serias}>U</NavLink>
+            <NavLink to="/door/catalog/pw" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
+              PW
+            </NavLink>
+            <NavLink to="/door/catalog/pm" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
+              PM
+            </NavLink>
+            <NavLink to="/door/catalog/p" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
+              P
+            </NavLink>
+            <NavLink to="/door/catalog/u" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
+              U
+            </NavLink>
           </div>
           <div>
             <h3>КОЛІР</h3>
@@ -204,7 +210,7 @@ const PM = () => {
               </OverlayTrigger>
             ))}
           </div>
-          
+
           <div>
             <h3>СКЛО</h3>
             {Object.keys(imagesGlass).map((glass, index) => (
@@ -225,11 +231,11 @@ const PM = () => {
           </div>
         </div>
         <div className={s.imgBox}>
-          <PMcatalog images={selectedImages} nameDoor={selectedName} />
+          <Pcatalog images={selectedImages} nameDoor={selectedName} />
         </div>
       </div>
     </>
   );
 };
 
-export default PM;
+export default P;
