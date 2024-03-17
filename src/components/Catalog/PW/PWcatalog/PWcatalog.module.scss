@@ -2,6 +2,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  width: 90%;
+  @media screen and (max-width: 480px) {
+   
+  grid-template-columns: repeat(2, 1fr);
+  
+  }
 }
 .photoSliderImage {
   width: 80%;
@@ -9,6 +15,12 @@
 .nameImg {
   display: flex;
   margin-right: 10px;
+  @media screen and (max-width: 480px) {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%;
+  }
 }
 .nameBox {
   margin-right: 10px;
