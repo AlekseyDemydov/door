@@ -43,7 +43,7 @@ const Catalog = () => {
           <NavLink to="/door/catalog/p" className={s.more}>
             Серія P
           </NavLink>
-          <NavLink to="/door/catalog/m" className={s.more}>
+          <NavLink to="/door/catalog/u" className={s.more}>
             Серія U
           </NavLink>
           </div>

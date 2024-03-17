@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './Pcatalog.module.scss';
+import s from './Ucatalog.module.scss';
 
-const Pcatalog = ({ images, nameDoor }) => {
+const Ucatalog = ({ images, nameDoor }) => {
   if (!images || !Array.isArray(images)) {
     return null;
   }
@@ -9,12 +9,16 @@ const Pcatalog = ({ images, nameDoor }) => {
   const getFileNameWithoutExtension = filePath => {
     if (!filePath) return '';
     const fileNameWithExtension = filePath.split('/').pop();
-    // const fileNameWithoutExtension = fileNameWithExtension.split('.')[0];
-    const fileNameWithoutExtension = fileNameWithExtension
-      .replace('_', ' ');
-    return fileNameWithoutExtension.slice(0, 8);
-    // return fileNameWithExtension.slice(0, 8); // Повертає лише перші 8 символів
+    const fileNameWithoutExtension = fileNameWithExtension.replace(/_/g, ' ');
+    return fileNameWithoutExtension.slice(0, 5);
   };
+  // const getFileNameWithoutExtension = filePath => {
+  //   if (!filePath) return '';
+  //   const fileNameWithExtension = filePath.split('/').pop(); // Отримуємо ім'я файлу з розширенням
+  //   const fileNameWithoutExtension = fileNameWithExtension.replace(/\.[^/.]+$/, ''); // Відділяємо ім'я від розширення
+  //   const sanitizedFileName = fileNameWithoutExtension.replace('_', ' '); // Замінюємо символи "_" на пробіли
+  //   return sanitizedFileName;
+  // };
 
   const halfLength = Math.ceil(images.length / 2);
   const firstHalfImages = images.slice(0, halfLength);
@@ -57,4 +61,4 @@ const Pcatalog = ({ images, nameDoor }) => {
   );
 };
 
-export default Pcatalog;
+export default Ucatalog;

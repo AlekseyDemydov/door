@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  width: 90%;
   @media screen and (max-width: 480px) {
    
   grid-template-columns: repeat(2, 1fr);
@@ -16,6 +15,7 @@
 .nameImg {
   display: flex;
   margin-right: 10px;
+width: 100%;
   @media screen and (max-width: 480px) {
     display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -27,13 +27,13 @@
   margin-right: 10px;
   border: 1px black solid ;
   padding: 5px;
-  width: 95px;
+  width: 65px;
   height: 35px;
 }
 .matched {
   position: relative;
   background-color: rgba(7, 7, 7, 0.164);
-  width: 95px;
+  // width: 95px;
   height: 35px;
 
   &:before, &:after {
