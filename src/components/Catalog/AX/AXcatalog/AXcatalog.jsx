@@ -1,18 +1,24 @@
 import React from 'react';
-import s from './Pcatalog.module.scss';
+import s from './AXcatalog.module.scss';
 
-const Pcatalog = ({ images, nameDoor }) => {
+const AXcatalog = ({ images, nameDoor }) => {
+
   if (!images || !Array.isArray(images)) {
-    return null;
+    return (
+      <div>
+        <p>Оберіть інший варіант</p>
+      </div>
+    );
   }
+  
 
   const getFileNameWithoutExtension = filePath => {
     if (!filePath) return '';
     const fileNameWithExtension = filePath.split('/').pop();
     // const fileNameWithoutExtension = fileNameWithExtension.split('.')[0];
     const fileNameWithoutExtension = fileNameWithExtension
-      .replace('_', ' ');
-    return fileNameWithoutExtension.slice(0, 8);
+      .replace('-', ' ');
+    return fileNameWithoutExtension.slice(0, 4);
     // return fileNameWithExtension.slice(0, 8); // Повертає лише перші 8 символів
   };
 
@@ -49,6 +55,7 @@ const Pcatalog = ({ images, nameDoor }) => {
           return (
             <div key={index}>
               <img src={image} alt="" className={s.photoSliderImage} />
+             
             </div>
           );
         })}
@@ -57,4 +64,4 @@ const Pcatalog = ({ images, nameDoor }) => {
   );
 };
 
-export default Pcatalog;
+export default AXcatalog;

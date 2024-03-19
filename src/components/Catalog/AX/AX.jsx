@@ -1,73 +1,71 @@
 import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import Pcatalog from './Pcatalog/Pcatalog';
+import AXcatalog from './AXcatalog/AXcatalog';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-import Pmain from './img/Рmain.jpg';
+import AXmain from './img/АХmain.jpg';
 
-import creem from './img/allDoor/color/creem.jpg';
-import black from './img/allDoor/color/black.jpg';
-import Grafit from './img/allDoor/color/Grafit.jpg';
-import light_gray from './img/allDoor/color/light_gray.jpg';
-import Perlamutr_Belyy from './img/allDoor/color/Perlamutr_Belyy.jpg';
-import Perlamutr_Bronza from './img/allDoor/color/Perlamutr_Bronza.jpg';
-import Perlamutr_Zoloto from './img/allDoor/color/Perlamutr_Zoloto.jpg';
-import white from './img/allDoor/color/white.jpg';
+import Black from './img/allDoor/color/Black.jpg';
+import Bronze from './img/allDoor/color/Bronze.jpg';
+import Gold from './img/allDoor/color/Gold.jpg';
+import GrayNight from './img/allDoor/color/GrayNight.jpg';
+import Silver from './img/allDoor/color/Silver.jpg';
+import White from './img/allDoor/color/White.jpg';
 
 import mt from './img/glass/color/mt.jpg';
 import pr from './img/glass/color/pr.jpg';
+import t from './img/glass/color/t.jpg';
+import z from './img/glass/color/z.jpg';
 
-import s from './P.module.scss';
+import s from './AX.module.scss';
 
 const imagesColor = {
-  Black: black,
-  Creem: creem,
-  Grafit: Grafit,
-  LiteGray: light_gray,
-  PerWhite: Perlamutr_Belyy,
-  Bronze: Perlamutr_Bronza,
-  Gold: Perlamutr_Zoloto,
-  White: white,
+  Black: Black,
+  Bronze: Bronze,
+  Gold: Gold,
+  GrayNight: GrayNight,
+  Silver: Silver,
+  White: White,
 };
 const colors = {
-  Black: 'Чорний',
-  Creem: 'Крем',
-  Grafit: 'Графіт',
-  LiteGray: 'лайт грей',
-  PerWhite: 'Перламутр білий',
-  Bronze: 'перламутр бронза',
-  Gold: 'перламутр золото',
-  White: 'Білий',
+  Black: 'чорний матовий',
+  Bronze: 'бронза',
+  Gold: 'золото',
+  GrayNight: 'сіра ніч',
+  Silver: 'Срібло матове',
+  White: 'вайт',
 };
 
 const imagesGlass = {
   mt: mt,
   pr: pr,
+  t: t,
+  z: z,
 };
 
 const gla = {
   mt: 'матовий',
   pr: 'прозорий',
+  t: 'Тоноване',
+  z: 'дзеркало',
 };
 
 const importAll = context => context.keys().map(context);
 
 const imagesDoor = {
-  Black: importAll(require.context('./img/allDoor/black', false, /\.(png)$/)),
-  Creem: importAll(require.context('./img/allDoor/creem', false, /\.(png)$/)),
-  Grafit: importAll(require.context('./img/allDoor/Grafit', false, /\.(png)$/)),
-  White: importAll(require.context('./img/allDoor/white', false, /\.(png)$/)),
-  LiteGray: importAll(
-    require.context('./img/allDoor/litegrey', false, /\.(png)$/)
+  Black: importAll(require.context('./img/allDoor/Black', false, /\.(png)$/)),
+  Bronze: importAll(require.context('./img/allDoor/Bronze', false, /\.(png)$/)),
+  Gold: importAll(require.context('./img/allDoor/Gold', false, /\.(png)$/)),
+  GrayNight: importAll(
+    require.context('./img/allDoor/GrayNight', false, /\.(png)$/)
   ),
-  PerWhite: importAll(
-    require.context('./img/allDoor/perwhite', false, /\.(png)$/)
+  Silver: importAll(
+    require.context('./img/allDoor/Silver', false, /\.(png)$/)
   ),
-  Bronze: importAll(
-    require.context('./img/allDoor/perbronze', false, /\.(png)$/)
+  White: importAll(
+    require.context('./img/allDoor/White', false, /\.(png)$/)
   ),
-  Gold: importAll(require.context('./img/allDoor/pergold', false, /\.(png)$/)),
 };
 
 const imagesGlassmt = {
@@ -75,22 +73,16 @@ const imagesGlassmt = {
     require.context('./img/glass/mt/mtPlusBlack', false, /\.(png)$/)
   ),
   mtPlusBronze: importAll(
-    require.context('./img/glass/mt/mtPlusPerBronze', false, /\.(png)$/)
-  ),
-  mtPlusCreem: importAll(
-    require.context('./img/glass/mt/mtPlusCreem', false, /\.(png)$/)
+    require.context('./img/glass/mt/mtPlusBronze', false, /\.(png)$/)
   ),
   mtPlusGold: importAll(
-    require.context('./img/glass/mt/mtPlusPerGold', false, /\.(png)$/)
+    require.context('./img/glass/mt/mtPlusGold', false, /\.(png)$/)
   ),
-  mtPlusGrafit: importAll(
-    require.context('./img/glass/mt/mtPlusGrafit', false, /\.(png)$/)
+  mtPlusGrayNight: importAll(
+    require.context('./img/glass/mt/mtPlusGrayNight', false, /\.(png)$/)
   ),
-  mtPlusLiteGray: importAll(
-    require.context('./img/glass/mt/mtPlusLiteGray', false, /\.(png)$/)
-  ),
-  mtPlusPerWhite: importAll(
-    require.context('./img/glass/mt/mtPlusPerWhite', false, /\.(png)$/)
+  mtPlusSilver: importAll(
+    require.context('./img/glass/mt/mtPlusSilver', false, /\.(png)$/)
   ),
   mtPlusWhite: importAll(
     require.context('./img/glass/mt/mtPlusWhite', false, /\.(png)$/)
@@ -101,30 +93,45 @@ const imagesGlasspr = {
   prPlusBlack: importAll(
     require.context('./img/glass/pr/prPlusBlack', false, /\.(png)$/)
   ),
-  prPlusBronze: importAll(
-    require.context('./img/glass/pr/prPlusPerBronze', false, /\.(png)$/)
+  prPlusGrayNight: importAll(
+    require.context('./img/glass/pr/prPlusGrayNight', false, /\.(png)$/)
   ),
-  prPlusCreem: importAll(
-    require.context('./img/glass/pr/prPlusCreem', false, /\.(png)$/)
-  ),
-  prPlusGold: importAll(
-    require.context('./img/glass/pr/prPlusPerGold', false, /\.(png)$/)
-  ),
-  prPlusGrafit: importAll(
-    require.context('./img/glass/pr/prPlusGrafit', false, /\.(png)$/)
-  ),
-  prPlusLiteGray: importAll(
-    require.context('./img/glass/pr/prPlusLiteGray', false, /\.(png)$/)
-  ),
-  prPlusPerWhite: importAll(
-    require.context('./img/glass/pr/prPlusPerWhite', false, /\.(png)$/)
+  prPlusSilver: importAll(
+    require.context('./img/glass/pr/prPlusSilver', false, /\.(png)$/)
   ),
   prPlusWhite: importAll(
     require.context('./img/glass/pr/prPlusWhite', false, /\.(png)$/)
   ),
 };
 
-const P = () => {
+const imagesGlasst = {
+  tPlusBlack: importAll(
+    require.context('./img/glass/t/tPlusBlack', false, /\.(png)$/)
+  ),
+  tPlusGrayNight: importAll(
+    require.context('./img/glass/t/tPlusGrayNight', false, /\.(png)$/)
+  ),
+  tPlusSilver: importAll(
+    require.context('./img/glass/t/tPlusSilver', false, /\.(png)$/)
+  ),
+  tPlusWhite: importAll(
+    require.context('./img/glass/t/tPlusWhite', false, /\.(png)$/)
+  ),
+};
+
+const imagesGlassz = {
+  zPlusBlack: importAll(
+    require.context('./img/glass/z/zPlusBlack', false, /\.(png)$/)
+  ),
+  zPlusSilver: importAll(
+    require.context('./img/glass/z/zPlusSilver', false, /\.(png)$/)
+  ),
+  zPlusWhite: importAll(
+    require.context('./img/glass/z/zPlusWhite', false, /\.(png)$/)
+  ),
+};
+
+const AX = () => {
   const [selectedColor, setSelectedColor] = useState('Black');
   const [selectedName, setSelectedName] = useState('');
   const [selectedImages, setSelectedImages] = useState('');
@@ -153,6 +160,10 @@ const P = () => {
       setSelectedImages(imagesGlassmt[key]);
     } else if (glass === 'pr') {
       setSelectedImages(imagesGlasspr[key]);
+    } else if (glass === 't') {
+      setSelectedImages(imagesGlasst[key]);
+    } else if (glass === 'z') {
+      setSelectedImages(imagesGlassz[key]);
     }
   };
 
@@ -160,18 +171,21 @@ const P = () => {
     <>
       <div className={s.peregorodkibox}>
         <div className={s.mainBOx}>
-          <h1 className={s.titleper}>МОДЕЛЬ P</h1>
+          <h1 className={s.titleper}>МОДЕЛЬ AX</h1>
           <div>
             <ul className={s.infolistper}>
               <li className={s.infoper}>
-                Модельний ряд пропонує вибір царгових дверей як у класичному
-                стилі, так і в сучасному виконанні.
+                Алюмінієві міжкімнатні двері даної серії мають Х-подібний
+                профіль, велику різноманітність рішень щодо оформлення дверних
+                конструкцій фрамугами. До кожного стильового напрямку можна
+                підібрати своє рішення, яке підкреслить концепцію того чи іншого
+                інтер'єру.
               </li>
             </ul>
           </div>
         </div>
         <div className={s.perslider}>
-          <img src={Pmain} alt="" className={s.imgMainPa} />
+          <img src={AXmain} alt="" className={s.imgMainPa} />
         </div>
       </div>
       <div className={s.bgHero}></div>
@@ -179,17 +193,71 @@ const P = () => {
         <div className={s.leftSide}>
           <div>
             <h3>СЕРІЇ</h3>
-            <NavLink to="/door/catalog/pw" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
-              PW
+            <NavLink
+              to="/door/catalog/ax"
+              style={({ isActive }) => ({
+                border: isActive
+                  ? '3px solid rgb(8, 7, 7)'
+                  : '1px solid rgb(8, 7, 7)',
+              })}
+              className={s.serias}
+            >
+              AX
             </NavLink>
-            <NavLink to="/door/catalog/pm" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
-              PM
+            <NavLink
+              to="/door/catalog/av"
+              style={({ isActive }) => ({
+                border: isActive
+                  ? '3px solid rgb(8, 7, 7)'
+                  : '1px solid rgb(8, 7, 7)',
+              })}
+              className={s.serias}
+            >
+              AV
             </NavLink>
-            <NavLink to="/door/catalog/p" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
-              P
+            <NavLink
+              to="/door/catalog/ag"
+              style={({ isActive }) => ({
+                border: isActive
+                  ? '3px solid rgb(8, 7, 7)'
+                  : '1px solid rgb(8, 7, 7)',
+              })}
+              className={s.serias}
+            >
+              AG
             </NavLink>
-            <NavLink to="/door/catalog/u" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
-              U
+            <NavLink
+              to="/door/catalog/agn"
+              style={({ isActive }) => ({
+                border: isActive
+                  ? '3px solid rgb(8, 7, 7)'
+                  : '1px solid rgb(8, 7, 7)',
+              })}
+              className={s.serias}
+            >
+              AGN
+            </NavLink>
+            <NavLink
+              to="/door/catalog/agp"
+              style={({ isActive }) => ({
+                border: isActive
+                  ? '3px solid rgb(8, 7, 7)'
+                  : '1px solid rgb(8, 7, 7)',
+              })}
+              className={s.serias}
+            >
+              AGP
+            </NavLink>
+            <NavLink
+              to="/door/catalog/agk"
+              style={({ isActive }) => ({
+                border: isActive
+                  ? '3px solid rgb(8, 7, 7)'
+                  : '1px solid rgb(8, 7, 7)',
+              })}
+              className={s.serias}
+            >
+              AGK
             </NavLink>
           </div>
           <div>
@@ -231,11 +299,11 @@ const P = () => {
           </div>
         </div>
         <div className={s.imgBox}>
-          <Pcatalog images={selectedImages} nameDoor={selectedName} />
+          <AXcatalog images={selectedImages} nameDoor={selectedName} />
         </div>
       </div>
     </>
   );
 };
 
-export default P;
+export default AX;
