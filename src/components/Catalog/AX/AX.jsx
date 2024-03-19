@@ -6,8 +6,8 @@ import Tooltip from 'react-bootstrap/Tooltip';
 
 import AXmain from './img/АХmain.jpg';
 
-import Black from './img/allDoor/color/Black.jpg';
 import Bronze from './img/allDoor/color/Bronze.jpg';
+import Black from './img/allDoor/color/Black.jpg';
 import Gold from './img/allDoor/color/Gold.jpg';
 import GrayNight from './img/allDoor/color/GrayNight.jpg';
 import Silver from './img/allDoor/color/Silver.jpg';
