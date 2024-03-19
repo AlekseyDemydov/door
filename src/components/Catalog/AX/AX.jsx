@@ -6,7 +6,12 @@ import Tooltip from 'react-bootstrap/Tooltip';
 
 import AXmain from './img/АХmain.jpg';
 
-
+import Black from './img/allDoor/color/black.jpg'
+import Bronze from './img/allDoor/color/bronze.jpg'
+import Gold from './img/allDoor/color/gold.jpg'
+import GrayNight from './img/allDoor/color/grayNight.jpg'
+import Silver from './img/allDoor/color/silver.jpg'
+import White from './img/allDoor/color/white.jpg'
 
 import mt from './img/glass/color/mt.jpg';
 import pr from './img/glass/color/pr.jpg';
@@ -15,22 +20,22 @@ import z from './img/glass/color/z.jpg';
 
 import s from './AX.module.scss';
 
-// const imagesColor = {
-//   Black: Black,
-//   Bronze: Bronze,
-//   Gold: Gold,
-//   GrayNight: GrayNight,
-//   Silver: Silver,
-//   White: White,
-// };
-// const colors = {
-//   Black: 'чорний матовий',
-//   Bronze: 'бронза',
-//   Gold: 'золото',
-//   GrayNight: 'сіра ніч',
-//   Silver: 'Срібло матове',
-//   White: 'вайт',
-// };
+const imagesColor = {
+  Black: Black,
+  Bronze: Bronze,
+  Gold: Gold,
+  GrayNight: GrayNight,
+  Silver: Silver,
+  White: White,
+};
+const colors = {
+  Black: 'чорний матовий',
+  Bronze: 'бронза',
+  Gold: 'золото',
+  GrayNight: 'сіра ніч',
+  Silver: 'Срібло матове',
+  White: 'вайт',
+};
 
 const imagesGlass = {
   mt: mt,
@@ -132,13 +137,13 @@ const AX = () => {
   const [selectedImages, setSelectedImages] = useState('');
   const [selectedDoor, setSelectedDoor] = useState(null);
   console.log(selectedDoor);
-  console.log(setSelectedColor);
+  // console.log(setSelectedColor);
 
-  // const handleColorSelect = color => {
-  //   setSelectedColor(color);
+  const handleColorSelect = color => {
+    setSelectedColor(color);
 
-  //   setSelectedImages(imagesDoor[color]);
-  // };
+    setSelectedImages(imagesDoor[color]);
+  };
 
   useEffect(() => {
     const nameDoor = () => {
@@ -256,7 +261,7 @@ const AX = () => {
               AGK
             </NavLink>
           </div>
-          {/* <div>
+          <div>
             <h3>КОЛІР</h3>
             {Object.keys(imagesColor).map((color, index) => (
               <OverlayTrigger
@@ -273,7 +278,7 @@ const AX = () => {
                 />
               </OverlayTrigger>
             ))}
-          </div> */}
+          </div> 
 
           <div>
             <h3>СКЛО</h3>
