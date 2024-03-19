@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './AXcatalog.module.scss';
+import s from './AVcatalog.module.scss';
 
-const AXcatalog = ({ images, nameDoor }) => {
+const AVcatalog = ({ images, nameDoor }) => {
 
   if (!images || !Array.isArray(images)) {
     return (
@@ -17,7 +17,7 @@ const AXcatalog = ({ images, nameDoor }) => {
     const fileNameWithExtension = filePath.split('/').pop();
     // const fileNameWithoutExtension = fileNameWithExtension.split('.')[0];
     const fileNameWithoutExtension = fileNameWithExtension
-      .replace('-', ' ');
+      .replace('', ' ');
     return fileNameWithoutExtension.slice(0, 4);
     // return fileNameWithExtension.slice(0, 8); // Повертає лише перші 8 символів
   };
@@ -64,4 +64,4 @@ const AXcatalog = ({ images, nameDoor }) => {
   );
 };
 
-export default AXcatalog;
+export default AVcatalog;

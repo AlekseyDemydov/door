@@ -2,15 +2,15 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  width: 90%;
+  width: 100%;
   @media screen and (max-width: 480px) {
-   
+    width: 160%;
   grid-template-columns: repeat(2, 1fr);
   
   }
 }
 .photoSliderImage {
-  width: 80%;
+  width: 100%;
   
 }
 .nameImg {

@@ -4,13 +4,13 @@
   gap: 20px;
   width: 90%;
   @media screen and (max-width: 480px) {
-   
+    width: 100%;
   grid-template-columns: repeat(2, 1fr);
-  
+  gap: 5px;
   }
 }
 .photoSliderImage {
-  width: 80%;
+  width: 100%;
 }
 .nameImg {
   display: flex;
