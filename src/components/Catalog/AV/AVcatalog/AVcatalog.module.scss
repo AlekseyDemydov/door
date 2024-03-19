@@ -1,0 +1,61 @@
+.imgBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 90%;
+  @media screen and (max-width: 480px) {
+   
+  grid-template-columns: repeat(2, 1fr);
+  
+  }
+}
+.photoSliderImage {
+  width: 80%;
+  
+}
+.nameImg {
+  display: flex;
+  margin-right: 10px;
+  @media screen and (max-width: 480px) {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90%;
+  }
+}
+.nameBox {
+  margin-right: 10px;
+  border: 1px black solid ;
+  padding: 5px;
+  width: 95px;
+  height: 35px;
+}
+.matched {
+  position: relative;
+  background-color: rgba(7, 7, 7, 0.164);
+  width: 95px;
+  height: 35px;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    border-top: 2px solid black;
+    width: calc(100% + 5px); // Додаємо 2px для візуальної "перекресленості"
+  }
+
+  &:before {
+    top: 0;
+    left: 0px; // Зсуваємо вліво на 1px, щоб перекреслення було від кута до кута
+    transform-origin: left top;
+    transform: rotate(19deg);
+  }
+
+  &:after {
+    top: 0;
+    right: 0;
+    transform-origin: right bottom;
+    transform: rotate(-19deg);
+  }
+
+}
+
