@@ -6,12 +6,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 
 import AXmain from './img/АХmain.jpg';
 
-import Bronze from './img/allDoor/color/Bronze.jpg';
-// import Black from './img/allDoor/color/black.jpg'
-import Gold from './img/allDoor/color/Gold.jpg';
-import GrayNight from './img/allDoor/color/GrayNight.jpg';
-import Silver from './img/allDoor/color/Silver.jpg';
-import White from './img/allDoor/color/White.jpg';
+
 
 import mt from './img/glass/color/mt.jpg';
 import pr from './img/glass/color/pr.jpg';
@@ -20,22 +15,22 @@ import z from './img/glass/color/z.jpg';
 
 import s from './AX.module.scss';
 
-const imagesColor = {
-  // Black: Black,
-  Bronze: Bronze,
-  Gold: Gold,
-  GrayNight: GrayNight,
-  Silver: Silver,
-  White: White,
-};
-const colors = {
-  // Black: 'чорний матовий',
-  Bronze: 'бронза',
-  Gold: 'золото',
-  GrayNight: 'сіра ніч',
-  Silver: 'Срібло матове',
-  White: 'вайт',
-};
+// const imagesColor = {
+//   Black: Black,
+//   Bronze: Bronze,
+//   Gold: Gold,
+//   GrayNight: GrayNight,
+//   Silver: Silver,
+//   White: White,
+// };
+// const colors = {
+//   Black: 'чорний матовий',
+//   Bronze: 'бронза',
+//   Gold: 'золото',
+//   GrayNight: 'сіра ніч',
+//   Silver: 'Срібло матове',
+//   White: 'вайт',
+// };
 
 const imagesGlass = {
   mt: mt,
@@ -54,7 +49,7 @@ const gla = {
 const importAll = context => context.keys().map(context);
 
 const imagesDoor = {
-  // Black: importAll(require.context('./img/allDoor/Black', false, /\.(png)$/)),
+  Black: importAll(require.context('./img/allDoor/Black', false, /\.(png)$/)),
   Bronze: importAll(require.context('./img/allDoor/Bronze', false, /\.(png)$/)),
   Gold: importAll(require.context('./img/allDoor/Gold', false, /\.(png)$/)),
   GrayNight: importAll(
@@ -69,9 +64,9 @@ const imagesDoor = {
 };
 
 const imagesGlassmt = {
-  // mtPlusBlack: importAll(
-  //   require.context('./img/glass/mt/mtPlusBlack', false, /\.(png)$/)
-  // ),
+  mtPlusBlack: importAll(
+    require.context('./img/glass/mt/mtPlusBlack', false, /\.(png)$/)
+  ),
   mtPlusBronze: importAll(
     require.context('./img/glass/mt/mtPlusBronze', false, /\.(png)$/)
   ),
@@ -90,9 +85,9 @@ const imagesGlassmt = {
 };
 
 const imagesGlasspr = {
-  // prPlusBlack: importAll(
-  //   require.context('./img/glass/pr/prPlusBlack', false, /\.(png)$/)
-  // ),
+  prPlusBlack: importAll(
+    require.context('./img/glass/pr/prPlusBlack', false, /\.(png)$/)
+  ),
   prPlusGrayNight: importAll(
     require.context('./img/glass/pr/prPlusGrayNight', false, /\.(png)$/)
   ),
@@ -105,9 +100,9 @@ const imagesGlasspr = {
 };
 
 const imagesGlasst = {
-  // tPlusBlack: importAll(
-  //   require.context('./img/glass/t/tPlusBlack', false, /\.(png)$/)
-  // ),
+  tPlusBlack: importAll(
+    require.context('./img/glass/t/tPlusBlack', false, /\.(png)$/)
+  ),
   tPlusGrayNight: importAll(
     require.context('./img/glass/t/tPlusGrayNight', false, /\.(png)$/)
   ),
@@ -120,9 +115,9 @@ const imagesGlasst = {
 };
 
 const imagesGlassz = {
-  // zPlusBlack: importAll(
-  //   require.context('./img/glass/z/zPlusBlack', false, /\.(png)$/)
-  // ),
+  zPlusBlack: importAll(
+    require.context('./img/glass/z/zPlusBlack', false, /\.(png)$/)
+  ),
   zPlusSilver: importAll(
     require.context('./img/glass/z/zPlusSilver', false, /\.(png)$/)
   ),
@@ -137,12 +132,13 @@ const AX = () => {
   const [selectedImages, setSelectedImages] = useState('');
   const [selectedDoor, setSelectedDoor] = useState(null);
   console.log(selectedDoor);
+  console.log(setSelectedColor);
 
-  const handleColorSelect = color => {
-    setSelectedColor(color);
+  // const handleColorSelect = color => {
+  //   setSelectedColor(color);
 
-    setSelectedImages(imagesDoor[color]);
-  };
+  //   setSelectedImages(imagesDoor[color]);
+  // };
 
   useEffect(() => {
     const nameDoor = () => {
@@ -260,7 +256,7 @@ const AX = () => {
               AGK
             </NavLink>
           </div>
-          <div>
+          {/* <div>
             <h3>КОЛІР</h3>
             {Object.keys(imagesColor).map((color, index) => (
               <OverlayTrigger
@@ -277,7 +273,7 @@ const AX = () => {
                 />
               </OverlayTrigger>
             ))}
-          </div>
+          </div> */}
 
           <div>
             <h3>СКЛО</h3>
