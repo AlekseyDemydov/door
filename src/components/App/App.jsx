@@ -23,6 +23,7 @@ import P from 'components/Catalog/P/P';
 import U from 'components/Catalog/U/U';
 import AX from 'components/Catalog/AX/AX';
 import AV from 'components/Catalog/AV/AV';
+import AG from 'components/Catalog/AG/AG';
 
 export const App = () => {
   return (
@@ -41,6 +42,7 @@ export const App = () => {
           <Route path="catalog/u" element={<U />} />
           <Route path="catalog/ax" element={<AX />} />
           <Route path="catalog/av" element={<AV />} />
+          <Route path="catalog/ag" element={<AG />} />
           <Route path="system" element={<Systemopen />} />
           <Route path="projects" element={<Project />} />
           <Route path="contacts" element={<Home />} />

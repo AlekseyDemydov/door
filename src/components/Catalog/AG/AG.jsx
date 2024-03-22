@@ -1,28 +1,28 @@
 import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import AXcatalog from './AXcatalog/AXcatalog';
+import AGcatalog from './AGcatalog/AGcatalog';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-import AXmain from './img/АХmain.jpg';
+import AGmain from './img/AGmain.jpeg';
 
-import Black from './img/allDoor/color/black.jpg'
-import Bronze from './img/allDoor/color/bronze.jpg'
-import Gold from './img/allDoor/color/gold.jpg'
-import GrayNight from './img/allDoor/color/grayNight.jpg'
-import Silver from './img/allDoor/color/silver.jpg'
-import White from './img/allDoor/color/white.jpg'
+import Black from './img/allDoor/color/black.jpg';
+import Creem from './img/allDoor/color/creem.jpg';
+import Gold from './img/allDoor/color/gold.jpg';
+import GrayNight from './img/allDoor/color/grayNight.jpg';
+import Silver from './img/allDoor/color/silver.jpg';
+import White from './img/allDoor/color/white.jpg';
 
 import mt from './img/glass/color/mt.jpg';
 import pr from './img/glass/color/pr.jpg';
 import t from './img/glass/color/t.jpg';
 import z from './img/glass/color/z.jpg';
 
-import s from './AX.module.scss';
+import s from './AG.module.scss';
 
 const imagesColor = {
   Black: Black,
-  Bronze: Bronze,
+  Creem: Creem,
   Gold: Gold,
   GrayNight: GrayNight,
   Silver: Silver,
@@ -30,7 +30,7 @@ const imagesColor = {
 };
 const colors = {
   Black: 'чорний матовий',
-  Bronze: 'бронза',
+  Creem: 'крем',
   Gold: 'золото',
   GrayNight: 'сіра ніч',
   Silver: 'Срібло матове',
@@ -55,25 +55,21 @@ const importAll = context => context.keys().map(context);
 
 const imagesDoor = {
   Black: importAll(require.context('./img/allDoor/Black', false, /\.(png)$/)),
-  Bronze: importAll(require.context('./img/allDoor/Bronze', false, /\.(png)$/)),
+  Creem: importAll(require.context('./img/allDoor/Creem', false, /\.(png)$/)),
   Gold: importAll(require.context('./img/allDoor/Gold', false, /\.(png)$/)),
   GrayNight: importAll(
     require.context('./img/allDoor/GrayNight', false, /\.(png)$/)
   ),
-  Silver: importAll(
-    require.context('./img/allDoor/Silver', false, /\.(png)$/)
-  ),
-  White: importAll(
-    require.context('./img/allDoor/White', false, /\.(png)$/)
-  ),
+  Silver: importAll(require.context('./img/allDoor/Silver', false, /\.(png)$/)),
+  White: importAll(require.context('./img/allDoor/White', false, /\.(png)$/)),
 };
 
 const imagesGlassmt = {
   mtPlusBlack: importAll(
     require.context('./img/glass/mt/mtPlusBlack', false, /\.(png)$/)
   ),
-  mtPlusBronze: importAll(
-    require.context('./img/glass/mt/mtPlusBronze', false, /\.(png)$/)
+  mtPlusCreem: importAll(
+    require.context('./img/glass/mt/mtPlusCreem', false, /\.(png)$/)
   ),
   mtPlusGold: importAll(
     require.context('./img/glass/mt/mtPlusGold', false, /\.(png)$/)
@@ -93,6 +89,12 @@ const imagesGlasspr = {
   prPlusBlack: importAll(
     require.context('./img/glass/pr/prPlusBlack', false, /\.(png)$/)
   ),
+  prPlusCreem: importAll(
+    require.context('./img/glass/pr/prPlusCreem', false, /\.(png)$/)
+  ),
+  prPlusGold: importAll(
+    require.context('./img/glass/pr/prPlusGold', false, /\.(png)$/)
+  ),
   prPlusGrayNight: importAll(
     require.context('./img/glass/pr/prPlusGrayNight', false, /\.(png)$/)
   ),
@@ -107,6 +109,12 @@ const imagesGlasspr = {
 const imagesGlasst = {
   tPlusBlack: importAll(
     require.context('./img/glass/t/tPlusBlack', false, /\.(png)$/)
+  ),
+  tPlusCreem: importAll(
+    require.context('./img/glass/t/tPlusCreem', false, /\.(png)$/)
+  ),
+  tPlusGold: importAll(
+    require.context('./img/glass/t/tPlusGold', false, /\.(png)$/)
   ),
   tPlusGrayNight: importAll(
     require.context('./img/glass/t/tPlusGrayNight', false, /\.(png)$/)
@@ -123,6 +131,15 @@ const imagesGlassz = {
   zPlusBlack: importAll(
     require.context('./img/glass/z/zPlusBlack', false, /\.(png)$/)
   ),
+  zPlusCreem: importAll(
+    require.context('./img/glass/z/zPlusCreem', false, /\.(png)$/)
+  ),
+  zPlusGold: importAll(
+    require.context('./img/glass/z/zPlusGold', false, /\.(png)$/)
+  ),
+  zPlusGrayNight: importAll(
+    require.context('./img/glass/z/zPlusGrayNight', false, /\.(png)$/)
+  ),
   zPlusSilver: importAll(
     require.context('./img/glass/z/zPlusSilver', false, /\.(png)$/)
   ),
@@ -131,7 +148,7 @@ const imagesGlassz = {
   ),
 };
 
-const AX = () => {
+const AG = () => {
   const [selectedColor, setSelectedColor] = useState('Black');
   const [selectedName, setSelectedName] = useState('');
   const [selectedImages, setSelectedImages] = useState('');
@@ -172,21 +189,19 @@ const AX = () => {
     <>
       <div className={s.peregorodkibox}>
         <div className={s.mainBOx}>
-          <h1 className={s.titleper}>МОДЕЛЬ AX</h1>
+          <h1 className={s.titleper}>МОДЕЛЬ AG</h1>
           <div>
             <ul className={s.infolistper}>
               <li className={s.infoper}>
-                Алюмінієві міжкімнатні двері даної серії мають Х-подібний
-                профіль, велику різноманітність рішень щодо оформлення дверних
-                конструкцій фрамугами. До кожного стильового напрямку можна
-                підібрати своє рішення, яке підкреслить концепцію того чи іншого
-                інтер'єру.
+                Міжкімнатні алюмінієві двері AG – елегантна деталь інтер'єру.
+                Конструкція дверей виглядає легкою та витонченою, завдяки
+                вузькому несучому профілю під одинарне скління.
               </li>
             </ul>
           </div>
         </div>
         <div className={s.perslider}>
-          <img src={AXmain} alt="" className={s.imgMainPa} />
+          <img src={AGmain} alt="" className={s.imgMainPa} />
         </div>
       </div>
       <div className={s.bgHero}></div>
@@ -278,7 +293,7 @@ const AX = () => {
                 />
               </OverlayTrigger>
             ))}
-          </div> 
+          </div>
 
           <div>
             <h3>СКЛО</h3>
@@ -300,11 +315,11 @@ const AX = () => {
           </div>
         </div>
         <div className={s.imgBox}>
-          <AXcatalog images={selectedImages} nameDoor={selectedName} />
+          <AGcatalog images={selectedImages} nameDoor={selectedName} />
         </div>
       </div>
     </>
   );
 };
 
-export default AX;
+export default AG;
