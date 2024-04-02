@@ -1,10 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import AGcatalog from './AGcatalog/AGcatalog';
+import AGNcatalog from './AGNcatalog/AGNcatalog';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-import AGmain from './img/AGmain.jpeg';
+import AGNmain from './img/AGNmain.jpeg';
 
 import Black from './img/allDoor/color/black.jpg';
 import Creem from './img/allDoor/color/creem.jpg';
@@ -13,16 +13,15 @@ import GrayNight from './img/allDoor/color/grayNight.jpg';
 import Silver from './img/allDoor/color/silver.jpg';
 import White from './img/allDoor/color/white.jpg';
 
-import mt from './img/glass/color/mt.jpg';
+import lb from './img/glass/color/lb.jpg';
 import pr from './img/glass/color/pr.jpg';
 import t from './img/glass/color/t.jpg';
 import z from './img/glass/color/z.jpg';
 
-import s from './AG.module.scss';
+import s from './AGN.module.scss';
 
 const imagesColor = {
   Black: Black,
-  Creem: Creem,
   Gold: Gold,
   GrayNight: GrayNight,
   Silver: Silver,
@@ -30,7 +29,6 @@ const imagesColor = {
 };
 const colors = {
   Black: 'чорний матовий',
-  Creem: 'крем',
   Gold: 'золото',
   GrayNight: 'сіра ніч',
   Silver: 'Срібло матове',
@@ -38,16 +36,16 @@ const colors = {
 };
 
 const imagesGlass = {
-  mt: mt,
+  lb: lb,
   pr: pr,
   t: t,
   z: z,
 };
 
 const gla = {
-  mt: 'матовий',
+  lb: 'LACOBEL чорний лак',
   pr: 'прозорий',
-  t: 'Тоноване',
+  lw: 'LACOBEL білий лак',
   z: 'дзеркало',
 };
 
@@ -55,7 +53,6 @@ const importAll = context => context.keys().map(context);
 
 const imagesDoor = {
   Black: importAll(require.context('./img/allDoor/Black', false, /\.(png)$/)),
-  Creem: importAll(require.context('./img/allDoor/Creem', false, /\.(png)$/)),
   Gold: importAll(require.context('./img/allDoor/Gold', false, /\.(png)$/)),
   GrayNight: importAll(
     require.context('./img/allDoor/GrayNight', false, /\.(png)$/)
@@ -64,24 +61,24 @@ const imagesDoor = {
   White: importAll(require.context('./img/allDoor/White', false, /\.(png)$/)),
 };
 
-const imagesGlassmt = {
-  mtPlusBlack: importAll(
-    require.context('./img/glass/mt/mtPlusBlack', false, /\.(png)$/)
+const imagesGlasslb = {
+  lbPlusBlack: importAll(
+    require.context('./img/glass/lb/lbPlusBlack', false, /\.(png)$/)
   ),
-  mtPlusCreem: importAll(
-    require.context('./img/glass/mt/mtPlusCreem', false, /\.(png)$/)
+  lbPlusCreem: importAll(
+    require.context('./img/glass/lb/lbPlusCreem', false, /\.(png)$/)
   ),
-  mtPlusGold: importAll(
-    require.context('./img/glass/mt/mtPlusGold', false, /\.(png)$/)
+  lbPlusGold: importAll(
+    require.context('./img/glass/lb/lbPlusGold', false, /\.(png)$/)
   ),
-  mtPlusGrayNight: importAll(
-    require.context('./img/glass/mt/mtPlusGrayNight', false, /\.(png)$/)
+  lbPlusGrayNight: importAll(
+    require.context('./img/glass/lb/lbPlusGrayNight', false, /\.(png)$/)
   ),
-  mtPlusSilver: importAll(
-    require.context('./img/glass/mt/mtPlusSilver', false, /\.(png)$/)
+  lbPlusSilver: importAll(
+    require.context('./img/glass/lb/lbPlusSilver', false, /\.(png)$/)
   ),
-  mtPlusWhite: importAll(
-    require.context('./img/glass/mt/mtPlusWhite', false, /\.(png)$/)
+  lbPlusWhite: importAll(
+    require.context('./img/glass/lb/lbPlusWhite', false, /\.(png)$/)
   ),
 };
 
@@ -106,24 +103,24 @@ const imagesGlasspr = {
   ),
 };
 
-const imagesGlasst = {
-  tPlusBlack: importAll(
-    require.context('./img/glass/t/tPlusBlack', false, /\.(png)$/)
+const imagesGlasslw = {
+  lwPlusBlack: importAll(
+    require.context('./img/glass/lw/lwPlusBlack', false, /\.(png)$/)
   ),
-  tPlusCreem: importAll(
-    require.context('./img/glass/t/tPlusCreem', false, /\.(png)$/)
+  lwPlusCreem: importAll(
+    require.context('./img/glass/lw/lwPlusCreem', false, /\.(png)$/)
   ),
-  tPlusGold: importAll(
-    require.context('./img/glass/t/tPlusGold', false, /\.(png)$/)
+  lwPlusGold: importAll(
+    require.context('./img/glass/lw/lwPlusGold', false, /\.(png)$/)
   ),
-  tPlusGrayNight: importAll(
-    require.context('./img/glass/t/tPlusGrayNight', false, /\.(png)$/)
+  lwPlusGrayNight: importAll(
+    require.context('./img/glass/lw/lwPlusGrayNight', false, /\.(png)$/)
   ),
-  tPlusSilver: importAll(
-    require.context('./img/glass/t/tPlusSilver', false, /\.(png)$/)
+  lwPlusSilver: importAll(
+    require.context('./img/glass/lw/lwPlusSilver', false, /\.(png)$/)
   ),
-  tPlusWhite: importAll(
-    require.context('./img/glass/t/tPlusWhite', false, /\.(png)$/)
+  lwPlusWhite: importAll(
+    require.context('./img/glass/lw/lwPlusWhite', false, /\.(png)$/)
   ),
 };
 
@@ -148,7 +145,7 @@ const imagesGlassz = {
   ),
 };
 
-const AG = () => {
+const AGN = () => {
   const [selectedColor, setSelectedColor] = useState('Black');
   const [selectedName, setSelectedName] = useState('');
   const [selectedImages, setSelectedImages] = useState('');
@@ -174,12 +171,12 @@ const AG = () => {
 
     const key = `${glass}Plus${selectedColor}`;
 
-    if (glass === 'mt') {
-      setSelectedImages(imagesGlassmt[key]);
+    if (glass === 'lb') {
+      setSelectedImages(imagesGlasslb[key]);
     } else if (glass === 'pr') {
       setSelectedImages(imagesGlasspr[key]);
-    } else if (glass === 't') {
-      setSelectedImages(imagesGlasst[key]);
+    } else if (glass === 'lw') {
+      setSelectedImages(imagesGlasslw[key]);
     } else if (glass === 'z') {
       setSelectedImages(imagesGlassz[key]);
     }
@@ -189,7 +186,7 @@ const AG = () => {
     <>
       <div className={s.peregorodkibox}>
         <div className={s.mainBOx}>
-          <h1 className={s.titleper}>МОДЕЛЬ AG</h1>
+          <h1 className={s.titleper}>МОДЕЛЬ AGN</h1>
           <div>
             <ul className={s.infolistper}>
               <li className={s.infoper}>
@@ -201,7 +198,7 @@ const AG = () => {
           </div>
         </div>
         <div className={s.perslider}>
-          <img src={AGmain} alt="" className={s.imgMainPa} />
+          <img src={AGNmain} alt="" className={s.imgMainPa} />
         </div>
       </div>
       <div className={s.bgHero}></div>
@@ -315,11 +312,11 @@ const AG = () => {
           </div>
         </div>
         <div className={s.imgBox}>
-          <AGcatalog images={selectedImages} nameDoor={selectedName} />
+          <AGNcatalog images={selectedImages} nameDoor={selectedName} />
         </div>
       </div>
     </>
   );
 };
 
-export default AG;
+export default AGN;
