@@ -1,13 +1,12 @@
 import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import AGcatalog from './AGcatalog/AGcatalog';
+import AGPcatalog from './AGPcatalog/AGPcatalog';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-import AGmain from './img/AGmain.jpeg';
+import AGPmain from './img/AGPmain.jpg';
 
 import Black from './img/allDoor/color/black.jpg';
-import Creem from './img/allDoor/color/creem.jpg';
 import Gold from './img/allDoor/color/gold.jpg';
 import GrayNight from './img/allDoor/color/grayNight.jpg';
 import Silver from './img/allDoor/color/silver.jpg';
@@ -18,11 +17,10 @@ import pr from './img/glass/color/pr.jpg';
 import t from './img/glass/color/t.jpg';
 import z from './img/glass/color/z.jpg';
 
-import s from './AG.module.scss';
+import s from './AGP.module.scss';
 
 const imagesColor = {
   Black: Black,
-  Creem: Creem,
   Gold: Gold,
   GrayNight: GrayNight,
   Silver: Silver,
@@ -30,7 +28,6 @@ const imagesColor = {
 };
 const colors = {
   Black: 'чорний матовий',
-  Creem: 'крем',
   Gold: 'золото',
   GrayNight: 'сіра ніч',
   Silver: 'Срібло матове',
@@ -55,7 +52,6 @@ const importAll = context => context.keys().map(context);
 
 const imagesDoor = {
   Black: importAll(require.context('./img/allDoor/Black', false, /\.(png)$/)),
-  Creem: importAll(require.context('./img/allDoor/Creem', false, /\.(png)$/)),
   Gold: importAll(require.context('./img/allDoor/Gold', false, /\.(png)$/)),
   GrayNight: importAll(
     require.context('./img/allDoor/GrayNight', false, /\.(png)$/)
@@ -67,9 +63,6 @@ const imagesDoor = {
 const imagesGlassmt = {
   mtPlusBlack: importAll(
     require.context('./img/glass/mt/mtPlusBlack', false, /\.(png)$/)
-  ),
-  mtPlusCreem: importAll(
-    require.context('./img/glass/mt/mtPlusCreem', false, /\.(png)$/)
   ),
   mtPlusGold: importAll(
     require.context('./img/glass/mt/mtPlusGold', false, /\.(png)$/)
@@ -89,9 +82,6 @@ const imagesGlasspr = {
   prPlusBlack: importAll(
     require.context('./img/glass/pr/prPlusBlack', false, /\.(png)$/)
   ),
-  prPlusCreem: importAll(
-    require.context('./img/glass/pr/prPlusCreem', false, /\.(png)$/)
-  ),
   prPlusGold: importAll(
     require.context('./img/glass/pr/prPlusGold', false, /\.(png)$/)
   ),
@@ -109,9 +99,6 @@ const imagesGlasspr = {
 const imagesGlasst = {
   tPlusBlack: importAll(
     require.context('./img/glass/t/tPlusBlack', false, /\.(png)$/)
-  ),
-  tPlusCreem: importAll(
-    require.context('./img/glass/t/tPlusCreem', false, /\.(png)$/)
   ),
   tPlusGold: importAll(
     require.context('./img/glass/t/tPlusGold', false, /\.(png)$/)
@@ -131,9 +118,6 @@ const imagesGlassz = {
   zPlusBlack: importAll(
     require.context('./img/glass/z/zPlusBlack', false, /\.(png)$/)
   ),
-  zPlusCreem: importAll(
-    require.context('./img/glass/z/zPlusCreem', false, /\.(png)$/)
-  ),
   zPlusGold: importAll(
     require.context('./img/glass/z/zPlusGold', false, /\.(png)$/)
   ),
@@ -148,7 +132,7 @@ const imagesGlassz = {
   ),
 };
 
-const AG = () => {
+const AGP = () => {
   const [selectedColor, setSelectedColor] = useState('Black');
   const [selectedName, setSelectedName] = useState('');
   const [selectedImages, setSelectedImages] = useState('');
@@ -189,19 +173,21 @@ const AG = () => {
     <>
       <div className={s.peregorodkibox}>
         <div className={s.mainBOx}>
-          <h1 className={s.titleper}>МОДЕЛЬ AG</h1>
+          <h1 className={s.titleper}>МОДЕЛЬ AGP</h1>
           <div>
             <ul className={s.infolistper}>
               <li className={s.infoper}>
-                Міжкімнатні алюмінієві двері AG – елегантна деталь інтер'єру.
-                Конструкція дверей виглядає легкою та витонченою, завдяки
-                вузькому несучому профілю під одинарне скління.
+                Двері виконані з алюмінієвого профілю під одинарне скління,
+                поєднує ключові тренди сучасного інтер'єру, якість і
+                функціональність. Оригінальний дизайн дверного полотна надає
+                багатогранної форми профілю. А фурнітура додає комфорту та
+                стилю.
               </li>
             </ul>
           </div>
         </div>
         <div className={s.perslider}>
-          <img src={AGmain} alt="" className={s.imgMainPa} />
+          <img src={AGPmain} alt="" className={s.imgMainPa} />
         </div>
       </div>
       <div className={s.bgHero}></div>
@@ -315,11 +301,11 @@ const AG = () => {
           </div>
         </div>
         <div className={s.imgBox}>
-          <AGcatalog images={selectedImages} nameDoor={selectedName} />
+          <AGPcatalog images={selectedImages} nameDoor={selectedName} />
         </div>
       </div>
     </>
   );
 };
 
-export default AG;
+export default AGP;

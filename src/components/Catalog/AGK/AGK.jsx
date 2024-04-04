@@ -15,8 +15,6 @@ import prgray from './img/allDoor/color/prgray.jpg';
 import tb from './img/allDoor/color/tb.jpg';
 import tgray from './img/allDoor/color/tgray.jpg';
 
-
-
 import s from './AGK.module.scss';
 
 const imagesColor = {
@@ -40,23 +38,18 @@ const colors = {
   tgray: 'тоноване скло+сірий прокрас',
 };
 
-
-
 const importAll = context => context.keys().map(context);
 
 const imagesDoor = {
   lbb: importAll(require.context('./img/allDoor/lbb', false, /\.(png)$/)),
   lbw: importAll(require.context('./img/allDoor/lbw', false, /\.(png)$/)),
   mtb: importAll(require.context('./img/allDoor/mtb', false, /\.(png)$/)),
-  mtgray: importAll(
-    require.context('./img/allDoor/mtgray', false, /\.(png)$/)
-  ),
+  mtgray: importAll(require.context('./img/allDoor/mtgray', false, /\.(png)$/)),
   prb: importAll(require.context('./img/allDoor/prb', false, /\.(png)$/)),
   prgray: importAll(require.context('./img/allDoor/prgray', false, /\.(png)$/)),
   tb: importAll(require.context('./img/allDoor/tb', false, /\.(png)$/)),
   tgray: importAll(require.context('./img/allDoor/tgray', false, /\.(png)$/)),
 };
-
 
 const AGK = () => {
   const [selectedColor, setSelectedColor] = useState('Black');
@@ -81,19 +74,20 @@ const AGK = () => {
     nameDoor();
   }, []);
 
- 
-
   return (
     <>
       <div className={s.peregorodkibox}>
         <div className={s.mainBOx}>
-          <h1 className={s.titleper}>МОДЕЛЬ AG</h1>
+          <h1 className={s.titleper}>МОДЕЛЬ AGK</h1>
           <div>
             <ul className={s.infolistper}>
               <li className={s.infoper}>
-                Міжкімнатні алюмінієві двері AG – елегантна деталь інтер'єру.
-                Конструкція дверей виглядає легкою та витонченою, завдяки
-                вузькому несучому профілю під одинарне скління.
+                Міжкімнатні алюмінієві двері серії AGK – нова розробка нашого
+                виробництва. Двері цієї серії функціональні та елегантні.
+                Конструкція дверей виконана з алюмінієвого профілю під подвійне
+                скління, ідеально поєднуються з дверима інших серій, ефектно
+                підкреслять та доповнять класичний або ультрасучасний інтер'єр у
+                стилі Хай-тек.
               </li>
             </ul>
           </div>
@@ -192,8 +186,6 @@ const AGK = () => {
               </OverlayTrigger>
             ))}
           </div>
-
-          
         </div>
         <div className={s.imgBox}>
           <AGKcatalog images={selectedImages} nameDoor={selectedName} />

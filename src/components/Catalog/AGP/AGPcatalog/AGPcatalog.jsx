@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './AGcatalog.module.scss';
+import s from './AGPcatalog.module.scss';
 
-const AGcatalog = ({ images, nameDoor }) => {
+const AGPcatalog = ({ images, nameDoor }) => {
 
   if (!images || !Array.isArray(images)) {
     return (
@@ -18,7 +18,7 @@ const AGcatalog = ({ images, nameDoor }) => {
     // const fileNameWithoutExtension = fileNameWithExtension.split('.')[0];
     const fileNameWithoutExtension = fileNameWithExtension
       .replace('AG', 'AG ');
-    return fileNameWithoutExtension.slice(0, 5);
+    return fileNameWithoutExtension.slice(0, 3);
     // return fileNameWithExtension.slice(0, 8); // Повертає лише перші 8 символів
   };
 
@@ -64,4 +64,4 @@ const AGcatalog = ({ images, nameDoor }) => {
   );
 };
 
-export default AGcatalog;
+export default AGPcatalog;
