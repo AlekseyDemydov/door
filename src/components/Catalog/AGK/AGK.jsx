@@ -1,159 +1,71 @@
 import { NavLink } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import AGcatalog from './AGcatalog/AGcatalog';
+import AGKcatalog from './AGKcatalog/AGKcatalog';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 
-import AGmain from './img/AGmain.jpeg';
+import AGKmain from './img/AGKmain.jpg';
 
-import Black from './img/allDoor/color/black.jpg';
-import Creem from './img/allDoor/color/creem.jpg';
-import Gold from './img/allDoor/color/gold.jpg';
-import GrayNight from './img/allDoor/color/grayNight.jpg';
-import Silver from './img/allDoor/color/silver.jpg';
-import White from './img/allDoor/color/white.jpg';
+import lbb from './img/allDoor/color/lbb.png';
+import lbw from './img/allDoor/color/lbw.png';
+import mtb from './img/allDoor/color/mtb.jpg';
+import mtgray from './img/allDoor/color/mtgray.jpg';
+import prb from './img/allDoor/color/prb.jpg';
+import prgray from './img/allDoor/color/prgray.jpg';
+import tb from './img/allDoor/color/tb.jpg';
+import tgray from './img/allDoor/color/tgray.jpg';
 
-import mt from './img/glass/color/mt.jpg';
-import pr from './img/glass/color/pr.jpg';
-import t from './img/glass/color/t.jpg';
-import z from './img/glass/color/z.jpg';
 
-import s from './AG.module.scss';
+
+import s from './AGK.module.scss';
 
 const imagesColor = {
-  Black: Black,
-  Creem: Creem,
-  Gold: Gold,
-  GrayNight: GrayNight,
-  Silver: Silver,
-  White: White,
+  lbb: lbb,
+  lbw: lbw,
+  mtb: mtb,
+  mtgray: mtgray,
+  prb: prb,
+  prgray: prgray,
+  tb: tb,
+  tgray: tgray,
 };
 const colors = {
-  Black: 'чорний матовий',
-  Creem: 'крем',
-  Gold: 'золото',
-  GrayNight: 'сіра ніч',
-  Silver: 'Срібло матове',
-  White: 'вайт',
+  lbb: 'LACOBEL чорний лак',
+  lbw: 'LACOBEL білий лак',
+  mtb: 'матове скло+чорний прокрас',
+  mtgray: 'матове скло+сірий прокрас',
+  prb: 'прозоре скло+чорний прокрас',
+  prgray: 'прозоре скло+сірий прокрас',
+  tb: 'тоноване скло+чорний прокрас',
+  tgray: 'тоноване скло+сірий прокрас',
 };
 
-const imagesGlass = {
-  mt: mt,
-  pr: pr,
-  t: t,
-  z: z,
-};
 
-const gla = {
-  mt: 'матовий',
-  pr: 'прозорий',
-  t: 'Тоноване',
-  z: 'дзеркало',
-};
 
 const importAll = context => context.keys().map(context);
 
 const imagesDoor = {
-  Black: importAll(require.context('./img/allDoor/Black', false, /\.(png)$/)),
-  Creem: importAll(require.context('./img/allDoor/Creem', false, /\.(png)$/)),
-  Gold: importAll(require.context('./img/allDoor/Gold', false, /\.(png)$/)),
-  GrayNight: importAll(
-    require.context('./img/allDoor/GrayNight', false, /\.(png)$/)
+  lbb: importAll(require.context('./img/allDoor/lbb', false, /\.(png)$/)),
+  lbw: importAll(require.context('./img/allDoor/lbw', false, /\.(png)$/)),
+  mtb: importAll(require.context('./img/allDoor/mtb', false, /\.(png)$/)),
+  mtgray: importAll(
+    require.context('./img/allDoor/mtgray', false, /\.(png)$/)
   ),
-  Silver: importAll(require.context('./img/allDoor/Silver', false, /\.(png)$/)),
-  White: importAll(require.context('./img/allDoor/White', false, /\.(png)$/)),
+  prb: importAll(require.context('./img/allDoor/prb', false, /\.(png)$/)),
+  prgray: importAll(require.context('./img/allDoor/prgray', false, /\.(png)$/)),
+  tb: importAll(require.context('./img/allDoor/tb', false, /\.(png)$/)),
+  tgray: importAll(require.context('./img/allDoor/tgray', false, /\.(png)$/)),
 };
 
-const imagesGlassmt = {
-  mtPlusBlack: importAll(
-    require.context('./img/glass/mt/mtPlusBlack', false, /\.(png)$/)
-  ),
-  mtPlusCreem: importAll(
-    require.context('./img/glass/mt/mtPlusCreem', false, /\.(png)$/)
-  ),
-  mtPlusGold: importAll(
-    require.context('./img/glass/mt/mtPlusGold', false, /\.(png)$/)
-  ),
-  mtPlusGrayNight: importAll(
-    require.context('./img/glass/mt/mtPlusGrayNight', false, /\.(png)$/)
-  ),
-  mtPlusSilver: importAll(
-    require.context('./img/glass/mt/mtPlusSilver', false, /\.(png)$/)
-  ),
-  mtPlusWhite: importAll(
-    require.context('./img/glass/mt/mtPlusWhite', false, /\.(png)$/)
-  ),
-};
 
-const imagesGlasspr = {
-  prPlusBlack: importAll(
-    require.context('./img/glass/pr/prPlusBlack', false, /\.(png)$/)
-  ),
-  prPlusCreem: importAll(
-    require.context('./img/glass/pr/prPlusCreem', false, /\.(png)$/)
-  ),
-  prPlusGold: importAll(
-    require.context('./img/glass/pr/prPlusGold', false, /\.(png)$/)
-  ),
-  prPlusGrayNight: importAll(
-    require.context('./img/glass/pr/prPlusGrayNight', false, /\.(png)$/)
-  ),
-  prPlusSilver: importAll(
-    require.context('./img/glass/pr/prPlusSilver', false, /\.(png)$/)
-  ),
-  prPlusWhite: importAll(
-    require.context('./img/glass/pr/prPlusWhite', false, /\.(png)$/)
-  ),
-};
-
-const imagesGlasst = {
-  tPlusBlack: importAll(
-    require.context('./img/glass/t/tPlusBlack', false, /\.(png)$/)
-  ),
-  tPlusCreem: importAll(
-    require.context('./img/glass/t/tPlusCreem', false, /\.(png)$/)
-  ),
-  tPlusGold: importAll(
-    require.context('./img/glass/t/tPlusGold', false, /\.(png)$/)
-  ),
-  tPlusGrayNight: importAll(
-    require.context('./img/glass/t/tPlusGrayNight', false, /\.(png)$/)
-  ),
-  tPlusSilver: importAll(
-    require.context('./img/glass/t/tPlusSilver', false, /\.(png)$/)
-  ),
-  tPlusWhite: importAll(
-    require.context('./img/glass/t/tPlusWhite', false, /\.(png)$/)
-  ),
-};
-
-const imagesGlassz = {
-  zPlusBlack: importAll(
-    require.context('./img/glass/z/zPlusBlack', false, /\.(png)$/)
-  ),
-  zPlusCreem: importAll(
-    require.context('./img/glass/z/zPlusCreem', false, /\.(png)$/)
-  ),
-  zPlusGold: importAll(
-    require.context('./img/glass/z/zPlusGold', false, /\.(png)$/)
-  ),
-  zPlusGrayNight: importAll(
-    require.context('./img/glass/z/zPlusGrayNight', false, /\.(png)$/)
-  ),
-  zPlusSilver: importAll(
-    require.context('./img/glass/z/zPlusSilver', false, /\.(png)$/)
-  ),
-  zPlusWhite: importAll(
-    require.context('./img/glass/z/zPlusWhite', false, /\.(png)$/)
-  ),
-};
-
-const AG = () => {
+const AGK = () => {
   const [selectedColor, setSelectedColor] = useState('Black');
   const [selectedName, setSelectedName] = useState('');
   const [selectedImages, setSelectedImages] = useState('');
   const [selectedDoor, setSelectedDoor] = useState(null);
   console.log(selectedDoor);
+  console.log(selectedColor);
+  console.log(setSelectedDoor);
   // console.log(setSelectedColor);
 
   const handleColorSelect = color => {
@@ -164,26 +76,12 @@ const AG = () => {
 
   useEffect(() => {
     const nameDoor = () => {
-      setSelectedName(imagesDoor['Black']);
+      setSelectedName(imagesDoor['lbb']);
     };
     nameDoor();
   }, []);
 
-  const handleGlassSelect = glass => {
-    setSelectedDoor(glass);
-
-    const key = `${glass}Plus${selectedColor}`;
-
-    if (glass === 'mt') {
-      setSelectedImages(imagesGlassmt[key]);
-    } else if (glass === 'pr') {
-      setSelectedImages(imagesGlasspr[key]);
-    } else if (glass === 't') {
-      setSelectedImages(imagesGlasst[key]);
-    } else if (glass === 'z') {
-      setSelectedImages(imagesGlassz[key]);
-    }
-  };
+ 
 
   return (
     <>
@@ -201,7 +99,7 @@ const AG = () => {
           </div>
         </div>
         <div className={s.perslider}>
-          <img src={AGmain} alt="" className={s.imgMainPa} />
+          <img src={AGKmain} alt="" className={s.imgMainPa} />
         </div>
       </div>
       <div className={s.bgHero}></div>
@@ -277,7 +175,7 @@ const AG = () => {
             </NavLink>
           </div>
           <div>
-            <h3>КОЛІР</h3>
+            <h3>СКЛО</h3>
             {Object.keys(imagesColor).map((color, index) => (
               <OverlayTrigger
                 key={index}
@@ -295,31 +193,14 @@ const AG = () => {
             ))}
           </div>
 
-          <div>
-            <h3>СКЛО</h3>
-            {Object.keys(imagesGlass).map((glass, index) => (
-              <OverlayTrigger
-                key={index}
-                placement="top"
-                delay={{ show: 250, hide: 400 }}
-                overlay={<Tooltip>{gla[glass]}</Tooltip>}
-              >
-                <img
-                  className={s.imgCoolor}
-                  src={imagesGlass[glass]}
-                  alt=""
-                  onClick={() => handleGlassSelect(glass)}
-                />
-              </OverlayTrigger>
-            ))}
-          </div>
+          
         </div>
         <div className={s.imgBox}>
-          <AGcatalog images={selectedImages} nameDoor={selectedName} />
+          <AGKcatalog images={selectedImages} nameDoor={selectedName} />
         </div>
       </div>
     </>
   );
 };
 
-export default AG;
+export default AGK;
