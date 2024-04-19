@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './AGcatalog.module.scss';
+import s from './AGNcatalog.module.scss';
 
 const AGcatalog = ({ images, nameDoor }) => {
 
@@ -16,9 +16,9 @@ const AGcatalog = ({ images, nameDoor }) => {
     if (!filePath) return '';
     const fileNameWithExtension = filePath.split('/').pop();
     // const fileNameWithoutExtension = fileNameWithExtension.split('.')[0];
-    const fileNameWithoutExtension = fileNameWithExtension
-      .replace('AG', 'AG ');
-    return fileNameWithoutExtension.slice(0, 5);
+    // const fileNameWithoutExtension = fileNameWithExtension
+    //   .replace('AG', 'AG ');
+    return fileNameWithExtension.slice(0, 4);
     // return fileNameWithExtension.slice(0, 8); // Повертає лише перші 8 символів
   };
 

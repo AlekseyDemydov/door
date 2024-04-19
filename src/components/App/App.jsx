@@ -26,6 +26,7 @@ import AV from 'components/Catalog/AV/AV';
 import AG from 'components/Catalog/AG/AG';
 import AGK from 'components/Catalog/AGK/AGK';
 import AGP from 'components/Catalog/AGP/AGP';
+import AGN from 'components/Catalog/AGN/AGN';
 
 export const App = () => {
   return (
@@ -45,7 +46,7 @@ export const App = () => {
           <Route path="catalog/ax" element={<AX />} />
           <Route path="catalog/av" element={<AV />} />
           <Route path="catalog/ag" element={<AG />} />
-
+          <Route path="catalog/agn" element={<AGN />} />
           <Route path="catalog/agk" element={<AGK />} />
           <Route path="catalog/agp" element={<AGP />} />
           <Route path="system" element={<Systemopen />} />
