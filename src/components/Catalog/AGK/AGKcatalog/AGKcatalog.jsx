@@ -16,9 +16,9 @@ const AGKcatalog = ({ images, nameDoor }) => {
     if (!filePath) return '';
     const fileNameWithExtension = filePath.split('/').pop();
     // const fileNameWithoutExtension = fileNameWithExtension.split('.')[0];
-    const fileNameWithoutExtension = fileNameWithExtension
-      .replace('AG', 'AG ');
-    return fileNameWithoutExtension.slice(0, 3);
+    // const fileNameWithoutExtension = fileNameWithExtension
+    //   .replace('AG', 'AG ');
+    return fileNameWithExtension.slice(0, 4);
     // return fileNameWithExtension.slice(0, 8); // Повертає лише перші 8 символів
   };
 
