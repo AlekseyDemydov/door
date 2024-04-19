@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './AGcatalog.module.scss';
+import s from './Ncatalog.module.scss';
 
-const AGcatalog = ({ images, nameDoor }) => {
+const Ncatalog = ({ images, nameDoor }) => {
 
   if (!images || !Array.isArray(images)) {
     return (
@@ -64,4 +64,4 @@ const AGcatalog = ({ images, nameDoor }) => {
   );
 };
 
-export default AGcatalog;
+export default Ncatalog;
