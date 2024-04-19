@@ -90,9 +90,6 @@ const Catalog = () => {
           <NavLink to="/door/catalog/na" className={s.more}>
             Серія NA
           </NavLink>
-          <NavLink to="/door/catalog/ne" className={s.more}>
-            Серія NE
-          </NavLink>
           </div>
         </div>
         <img src={p4} alt="kolFarb" className={s.imgCatalog} />
