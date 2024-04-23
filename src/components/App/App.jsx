@@ -28,6 +28,8 @@ import AGK from 'components/Catalog/AGK/AGK';
 import AGP from 'components/Catalog/AGP/AGP';
 import AGN from 'components/Catalog/AGN/AGN';
 import N from 'components/Catalog/N/N';
+import NA from 'components/Catalog/NA/NA';
+import Contacts from 'components/Contacts/Contacts';
 
 export const App = () => {
   return (
@@ -51,8 +53,11 @@ export const App = () => {
           <Route path="catalog/agk" element={<AGK />} />
           <Route path="catalog/agp" element={<AGP />} />
           <Route path="catalog/n" element={<N />} />
+          <Route path="catalog/na" element={<NA />} />
           <Route path="system" element={<Systemopen />} />
           <Route path="projects" element={<Project />} />
+          
+          <Route path="contacts" element={<Contacts />} />
           <Route path="contacts" element={<Home />} />
           <Route path="penal" element={<Penal />} />
           <Route path="peregorodki" element={<Peregorodki />} />

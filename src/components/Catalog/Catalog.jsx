@@ -100,10 +100,10 @@ const Catalog = () => {
       Розсувні алюмінієві перегородки
           </h5>
           <div className={s.serias}>
-          <NavLink to="/door/catalog/kaskad" className={s.more}>
+          <NavLink to="/door/peregorodki" className={s.more}>
           Каскад
           </NavLink>
-          <NavLink to="/door/catalog/classic" className={s.more}>
+          <NavLink to="/door/peregorodki" className={s.more}>
           Класичне відкриття
           </NavLink>
           </div>

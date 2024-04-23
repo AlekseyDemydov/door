@@ -2,6 +2,7 @@
   height: 670.625px;
   margin: 0 auto;
   @media screen and (max-width: 480px) {
+    max-width: 350px;
     max-height: 220px;
   }
 }
@@ -14,6 +15,17 @@
   font-size: 38px;
   text-transform: uppercase;
   text-align: left;
+}
+.last {
+
+  left: 35%;
+  
+}
+.lastimg{
+  @media screen and (max-width: 480px) {
+    max-width: 230px;
+    max-height: 220px;
+  }
 }
 .infoTitle {
   @media screen and (max-width: 480px) {

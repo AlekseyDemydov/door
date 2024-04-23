@@ -1,6 +1,6 @@
 import Container from 'react-bootstrap/Container';
+import { NavLink } from 'react-router-dom';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import s from './Grid.module.scss';
 import one from '../img/1ax.png';
@@ -19,120 +19,129 @@ import thirteen from '../img/13М.jpg';
 import fourteen from '../img/14U.jpg';
 import fifteen from '../img/15N.png';
 import sixteen from '../img/16NA.png';
-import seventeen from '../img/17NЕ.png';
 
 function AutoLayoutExample() {
   return (
     <Container>
       <Row>
-        <Col className={s.col}>
+        <NavLink to="/door/catalog/ax" 
+        className={s.col}>
           <img src={one} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtn}>
             AX
           </button>
-        </Col>
-        <Col className={s.col}>
+        </NavLink>
+        <NavLink to="/door/catalog/av" 
+        className={s.col}>
           <img src={two} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtn}>
             AV
           </button>
-        </Col>
-        <Col className={s.col}>
+        </NavLink>
+        <NavLink to="/door/catalog/ag" 
+        className={s.col}>
           <img src={three} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtn}>
             AG
           </button>
-        </Col>
-        <Col className={s.col}>
+        </NavLink>
+        <NavLink to="/door/catalog/agn" 
+        className={s.col}>
           <img src={four} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtn}>
             AGN
           </button>
-        </Col>
-        <Col className={s.col}>
+        </NavLink>
+        <NavLink to="/door/catalog/agp" 
+        className={s.col}>
           <img src={five} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtn}>
             AGP
           </button>
-        </Col>
-        <Col className={s.col}>
+        </NavLink>
+        <NavLink to="/door/catalog/agk" 
+        className={s.col}>
           <img src={six} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtn}>
             AGK
           </button>
-        </Col>
+        </NavLink>
       </Row>
 
       <Row>
-        <Col className={s.col}>
+        <NavLink to="/door/peregorodki" 
+        className={s.col}>
           <img src={peregorodka} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtn}>
             Перегородки
           </button>
-        </Col>
-        <Col className={s.col}>
+        </NavLink>
+        <NavLink to="/door/catalog/pa" 
+        className={s.col}>
           <img src={eight} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtn}>
             PA
           </button>
-        </Col>
-        <Col className={s.col}>
+        </NavLink>
+        <NavLink to="/door/catalog/pe" 
+        className={s.col}>
           <img src={nine} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtn}>
             PE
           </button>
-        </Col>
-        <Col className={s.col}>
+        </NavLink>
+        <NavLink to="/door/catalog/pw" 
+        className={s.col}>
           <img src={ten} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtn}>
             PW
           </button>
-        </Col>
-        <Col className={s.col}>
+        </NavLink>
+        <NavLink to="/door/catalog/pm" 
+        className={s.col}>
           <img src={eleven} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtn}>
             PM
           </button>
-        </Col>
-        <Col className={s.col}>
+        </NavLink>
+        <NavLink to="/door/catalog/p" 
+        className={s.col}>
           <img src={twelve} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtn}>
             P
           </button>
-        </Col>
+        </NavLink>
       </Row>
 
       <Row>
-        <Col className={s.col}>
+        <NavLink to="/door/catalog/m" 
+        className={s.col}>
           <img src={thirteen} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtnq}>
             M
           </button>
-        </Col>
-        <Col className={s.col}>
+        </NavLink>
+        <NavLink to="/door/catalog/u" 
+        className={s.col}>
           <img src={fourteen} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtnq}>
             U
           </button>
-        </Col>
-        <Col className={s.col}>
+        </NavLink>
+        <NavLink to="/door/catalog/n" 
+        className={s.col}>
           <img src={fifteen} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtnq}>
             N
           </button>
-        </Col>
-        <Col className={s.col}>
+        </NavLink>
+        <NavLink to="/door/catalog/na" 
+        className={s.col}>
           <img src={sixteen} alt="" className={s.doorimg} />{' '}
           <button type="button" className={s.doorbtnq}>
             NA
           </button>
-        </Col>
-        <Col className={s.col}>
-          <img src={seventeen} alt="" className={s.doorimg} />{' '}
-          <button type="button" className={s.doorbtnq}>
-            NE
-          </button>
-        </Col>
+        </NavLink>
       </Row>
     </Container>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './AGNcatalog.module.scss';
+import s from './NAcatalog.module.scss';
 
-const AGcatalog = ({ images, nameDoor }) => {
+const NAcatalog = ({ images, nameDoor }) => {
 
   if (!images || !Array.isArray(images)) {
     return (
@@ -16,9 +16,9 @@ const AGcatalog = ({ images, nameDoor }) => {
     if (!filePath) return '';
     const fileNameWithExtension = filePath.split('/').pop();
     // const fileNameWithoutExtension = fileNameWithExtension.split('.')[0];
-    // const fileNameWithoutExtension = fileNameWithExtension
-    //   .replace('AG', 'AG ');
-    return fileNameWithExtension.slice(0, 4);
+    const fileNameWithoutExtension = fileNameWithExtension
+      .replace('_', ' ');
+    return fileNameWithoutExtension.slice(0, 5);
     // return fileNameWithExtension.slice(0, 8); // Повертає лише перші 8 символів
   };
 
@@ -36,7 +36,7 @@ const AGcatalog = ({ images, nameDoor }) => {
   const matchedElements = NameOfDoor.filter(element => nzmeOfImg.includes(element));
 
   return (
-    <div>
+    <div className={s.catal}>
       <div className={s.nameImg}>
       {firstHalfNames.map((doorName, index) => {
           const fileName = getFileNameWithoutExtension(doorName);
@@ -64,4 +64,4 @@ const AGcatalog = ({ images, nameDoor }) => {
   );
 };
 
-export default AGcatalog;
+export default NAcatalog;

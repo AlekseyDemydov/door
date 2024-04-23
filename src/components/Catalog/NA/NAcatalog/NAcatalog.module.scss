@@ -5,27 +5,27 @@
   width: 90%;
   @media screen and (max-width: 480px) {
     width: 110%;
-  grid-template-columns: repeat(2, 1fr);
-  
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .photoSliderImage {
   width: 80%;
-  
 }
 .nameImg {
   display: flex;
   margin-right: 10px;
-  @media screen and (max-width: 480px) {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+    @media screen and (max-width: 480px) {
     display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 90%;
   }
 }
 .nameBox {
   margin-right: 10px;
-  border: 1px black solid ;
+  border: 1px black solid;
   padding: 5px;
   width: 95px;
   height: 35px;
@@ -36,8 +36,9 @@
   width: 95px;
   height: 35px;
 
-  &:before, &:after {
-    content: "";
+  &:before,
+  &:after {
+    content: '';
     position: absolute;
     border-top: 2px solid black;
     width: calc(100% + 5px); // Додаємо 2px для візуальної "перекресленості"
@@ -56,6 +57,8 @@
     transform-origin: right bottom;
     transform: rotate(-19deg);
   }
-
 }
 
+.catal {
+  width: 800px;
+}
