@@ -17,7 +17,7 @@ const Ncatalog = ({ images, nameDoor }) => {
     const fileNameWithExtension = filePath.split('/').pop();
     // const fileNameWithoutExtension = fileNameWithExtension.split('.')[0];
     const fileNameWithoutExtension = fileNameWithExtension
-      .replace('AG', 'AG ');
+      .replace('_', ' ');
     return fileNameWithoutExtension.slice(0, 5);
     // return fileNameWithExtension.slice(0, 8); // Повертає лише перші 8 символів
   };
