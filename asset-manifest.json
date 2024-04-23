@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/door/static/css/main.0275086b.css",
-    "main.js": "/door/static/js/main.449b8179.js",
+    "main.css": "/door/static/css/main.0dbbec00.css",
+    "main.js": "/door/static/js/main.929c8651.js",
     "static/media/argonAnim.mp4": "/door/static/media/argonAnim.7756d403c4597ef3c397.mp4",
     "static/media/bookAnim.mp4": "/door/static/media/bookAnim.57d31374ae7f7b55d572.mp4",
     "static/media/kupeAnim.mp4": "/door/static/media/kupeAnim.0cf35d68376ba4742b67.mp4",
@@ -124,10 +124,23 @@
     "static/media/N_1.3.png": "/door/static/media/N_1.3.8921166ce0f8f8ff48c7.png",
     "static/media/N_1.9.png": "/door/static/media/N_1.9.543e06a51702d9a02cbe.png",
     "static/media/N_1.7.png": "/door/static/media/N_1.7.0b7864c78d54e68b8219.png",
+    "static/media/NA_22.png": "/door/static/media/NA_22.41c50011246dfb14f957.png",
+    "static/media/NA_21.png": "/door/static/media/NA_21.d68b473ad7d2b0e54e7f.png",
     "static/media/N_1.8.png": "/door/static/media/N_1.8.a8062a699179f4b76f13.png",
     "static/media/N_1.2.png": "/door/static/media/N_1.2.e57657494f5b5975c8f9.png",
+    "static/media/NA_19.png": "/door/static/media/NA_19.37fb1680adf4ba0aee07.png",
+    "static/media/NA_15.png": "/door/static/media/NA_15.0a1c1cf9489c38c9b831.png",
+    "static/media/NA_14.png": "/door/static/media/NA_14.fab5e66e192bcb9ff195.png",
     "static/media/N_1.4.png": "/door/static/media/N_1.4.b4921ed6e97548823880.png",
+    "static/media/NA_13.png": "/door/static/media/NA_13.262a5000a1fc3150f597.png",
+    "static/media/NA_11.png": "/door/static/media/NA_11.4f7c8311a677ecc73d68.png",
+    "static/media/NA_16.png": "/door/static/media/NA_16.88676b71596d4e65ff32.png",
+    "static/media/NA_20.png": "/door/static/media/NA_20.66d119e166aa997317e8.png",
+    "static/media/NA_18.png": "/door/static/media/NA_18.c874cc822273f9f56659.png",
+    "static/media/NA_12.png": "/door/static/media/NA_12.4a28e4a51b2fcb8b0dcb.png",
+    "static/media/NA_1.png": "/door/static/media/NA_1.8d9c202482b28cd5c2cc.png",
     "static/media/N_1.1.png": "/door/static/media/N_1.1.bae9c3df7a2fa5f26be3.png",
+    "static/media/NA_17.png": "/door/static/media/NA_17.714574c723d1f95c9ae3.png",
     "static/media/AGKmain.jpg": "/door/static/media/AGKmain.2c7732b624f96ef621c4.jpg",
     "static/media/AG2.png": "/door/static/media/AG2.098e575c618cf986452e.png",
     "static/media/AG12.png": "/door/static/media/AG12.fb281533a384642dd8d2.png",
@@ -143,6 +156,7 @@
     "static/media/1AV.png": "/door/static/media/1AV.c475ee1cbb06d1cd99fc.png",
     "static/media/1-AX.png": "/door/static/media/1-AX.38de2eba945e0224d331.png",
     "static/media/2av.png": "/door/static/media/2av.c5f76496c34652f04812.png",
+    "static/media/main.jpg": "/door/static/media/main.d13012ba5dd4a8b3a51c.jpg",
     "static/media/AG11.png": "/door/static/media/AG11.a432fc5d5768b5a6f40c.png",
     "static/media/1AGP.png": "/door/static/media/1AGP.5c3a8510d1e216bbee88.png",
     "static/media/AGN_1.png": "/door/static/media/AGN_1.e756728f225946c0ae78.png",
@@ -151,7 +165,6 @@
     "static/media/1AGN.png": "/door/static/media/1AGN.bae404f04327d2031960.png",
     "static/media/19PW.png": "/door/static/media/19PW.9251b4663730a2ecd984.png",
     "static/media/19_PW.png": "/door/static/media/19_PW.d477c9f3ca81dbbb9e30.png",
-    "static/media/17NЕ.png": "/door/static/media/17NЕ.b71c4a107818d2d8a3b3.png",
     "static/media/AGNmain.jpg": "/door/static/media/AGNmain.b93cdc4b14e74b553057.jpg",
     "static/media/5AGK.png": "/door/static/media/5AGK.ad297636790c27cadeed.png",
     "static/media/2AGР.png": "/door/static/media/2AGР.7cc7fe7e5048a4c49b2c.png",
@@ -253,11 +266,11 @@
     "static/media/100U_.webp": "/door/static/media/100U_.b945517d94d349bd118f.webp",
     "static/media/slick.woff": "/door/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/door/index.html",
-    "main.0275086b.css.map": "/door/static/css/main.0275086b.css.map",
-    "main.449b8179.js.map": "/door/static/js/main.449b8179.js.map"
+    "main.0dbbec00.css.map": "/door/static/css/main.0dbbec00.css.map",
+    "main.929c8651.js.map": "/door/static/js/main.929c8651.js.map"
   },
   "entrypoints": [
-    "static/css/main.0275086b.css",
-    "static/js/main.449b8179.js"
+    "static/css/main.0dbbec00.css",
+    "static/js/main.929c8651.js"
   ]
 }
