@@ -36,6 +36,7 @@ const Project = () => {
     <div className={s.project}>
       <div className={s.slide}>
         <div className={s.bigPhoto}>
+          
           <img
             src={imagesKitchen[bigKitchenPhotoIndex]}
             alt="Kitchen"
@@ -43,6 +44,7 @@ const Project = () => {
           />
         </div>
         <div className={s.carusel}>
+        <h3 className={s.titleCar}>Кухні</h3>
           <PhotoCarousel
             key="kitchen"
             images={imagesKitchen}
@@ -61,6 +63,7 @@ const Project = () => {
           />
         </div>
         <div className={s.carusel}>
+        <h3 className={s.titleCar}>Міжкімнатні двері</h3>
           <PhotoCarousel
             key="door"
             images={imagesDoor}
@@ -79,6 +82,7 @@ const Project = () => {
           />
         </div>
         <div className={s.carusel}>
+        <h3 className={s.titleCar}>Комоди</h3>
           <PhotoCarousel
             key="komod"
             images={imagesKomod}
@@ -97,6 +101,7 @@ const Project = () => {
           />
         </div>
         <div className={s.carusel}>
+        <h3 className={s.titleCar}>Стінові панелі</h3>
           <PhotoCarousel
             key="panels"
             images={imagesPanels}
@@ -115,6 +120,7 @@ const Project = () => {
           />
         </div>
         <div className={s.carusel}>
+        <h3 className={s.titleCar}>Скляні перегородки</h3>
           <PhotoCarousel
             key="peregorodka"
             images={imagesPeregorodka}
@@ -133,6 +139,7 @@ const Project = () => {
           />
         </div>
         <div className={s.carusel}>
+        <h3 className={s.titleCar}>Шафи</h3>
           <PhotoCarousel
             key="wardrobe"
             images={imagesWardrobe}

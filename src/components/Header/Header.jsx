@@ -5,6 +5,8 @@ import Navbar from 'react-bootstrap/Navbar';
 // import './Style.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import logo from './img/logodoor.png'
+import s from './Header.module.scss'
 
 const Header = () => {
   const location = useLocation();
@@ -34,7 +36,7 @@ const Header = () => {
     >
       <Container>
         <Navbar.Brand className="fs-1" as={Link} to="/door">
-          ЛАОЛА
+          <img src={logo} alt="logo" className={s.logomain} />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

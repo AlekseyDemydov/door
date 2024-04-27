@@ -3,8 +3,11 @@ import s from './Contacts.module.scss';
 
 const Contacts = () => {
   return (
+    <>
+    
     <div className={s.contacts}>
       <div className={s.contactInfo}>
+        <h1>НАШІ КОНТАКТИ</h1>
         <a href="mailto:laola.wood@gmail.com" className={s.number}>
         laola.wood@gmail.com
         </a>
@@ -17,9 +20,11 @@ const Contacts = () => {
           0739420901
         </a>
         <br />
-        <a href="https://www.instagram.com/larindoors49?igsh=MXBtcWJkYXNoa3E2YQ==">instagram</a>
+        <a href="https://www.instagram.com/larindoors49?igsh=MXBtcWJkYXNoa3E2YQ==" className={s.number}>instagram</a>
       </div>
-      <div className={s.map}>
+      
+    </div>
+    <div className={s.map}>
         {/* Відображення з гугл карт тут */}
         {/* Наприклад: */}
         <iframe
@@ -38,7 +43,7 @@ const Contacts = () => {
           }}
         ></iframe>
       </div>
-    </div>
+    </>
   );
 };
 
