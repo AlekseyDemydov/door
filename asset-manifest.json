@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/door/static/css/main.0c40b28c.css",
-    "main.js": "/door/static/js/main.bfaf6917.js",
+    "main.css": "/door/static/css/main.dbce26c8.css",
+    "main.js": "/door/static/js/main.40244c39.js",
     "static/media/argonAnim.mp4": "/door/static/media/argonAnim.7756d403c4597ef3c397.mp4",
     "static/media/bookAnim.mp4": "/door/static/media/bookAnim.57d31374ae7f7b55d572.mp4",
     "static/media/kupeAnim.mp4": "/door/static/media/kupeAnim.0cf35d68376ba4742b67.mp4",
@@ -11,7 +11,7 @@
     "static/media/one.jpg": "/door/static/media/one.cf2901ee01e47adedd36.jpg",
     "static/media/penal.jpg": "/door/static/media/penal.a2eb6f1927743fe3ec36.jpg",
     "static/media/AVmain.jpg": "/door/static/media/AVmain.29aa0ae70adfb36b56f3.jpg",
-    "static/media/logodoor.png": "/door/static/media/logodoor.eb43bf94d9e952b1f2ea.png",
+    "static/media/logodoorr.jpg": "/door/static/media/logodoorr.39c1702eae949e658537.jpg",
     "static/media/6peregorodka.jpg": "/door/static/media/6peregorodka.6c2a0b19e97b626b268d.jpg",
     "static/media/pen2.jpg": "/door/static/media/pen2.f4b1af9600b8b3ef1746.jpg",
     "static/media/27.jpg": "/door/static/media/27.0f64f23d131cee559836.jpg",
@@ -267,11 +267,11 @@
     "static/media/100U_.webp": "/door/static/media/100U_.b945517d94d349bd118f.webp",
     "static/media/slick.woff": "/door/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/door/index.html",
-    "main.0c40b28c.css.map": "/door/static/css/main.0c40b28c.css.map",
-    "main.bfaf6917.js.map": "/door/static/js/main.bfaf6917.js.map"
+    "main.dbce26c8.css.map": "/door/static/css/main.dbce26c8.css.map",
+    "main.40244c39.js.map": "/door/static/js/main.40244c39.js.map"
   },
   "entrypoints": [
-    "static/css/main.0c40b28c.css",
-    "static/js/main.bfaf6917.js"
+    "static/css/main.dbce26c8.css",
+    "static/js/main.40244c39.js"
   ]
 }
