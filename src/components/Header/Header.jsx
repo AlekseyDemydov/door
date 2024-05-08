@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 // import './Style.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import logo from './img/logodoor.png'
+import logo from './img/logodoorr.jpg'
 import s from './Header.module.scss'
 
 const Header = () => {

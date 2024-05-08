@@ -13,7 +13,7 @@ const PhotoCarousel = ({ images, length, onChange }) => {
     setCurrentImage(images[0]);
   }, [images]);
 
-  const openModal = (index) => {
+  const openModal = index => {
     setCurrentImage(images[index]);
     setModalOpen(true);
   };
@@ -23,7 +23,7 @@ const PhotoCarousel = ({ images, length, onChange }) => {
     setCurrentImage('');
   };
 
-  const generateImageName = (index) => images[index % images.length];
+  const generateImageName = index => images[index % images.length];
 
   const settings = {
     dots: false,
@@ -34,7 +34,7 @@ const PhotoCarousel = ({ images, length, onChange }) => {
       if (onChange) {
         onChange(next);
       }
-    }
+    },
   };
   const CustomButton = ({ direction, onClick }) => (
     <button
@@ -56,7 +56,17 @@ const PhotoCarousel = ({ images, length, onChange }) => {
       )}
     </button>
   );
-
+  const handleNext = () => {
+    const currentIndex = images.indexOf(currentImage);
+    const nextIndex = (currentIndex + 1) % images.length;
+    setCurrentImage(images[nextIndex]);
+  };
+  
+  const handlePrev = () => {
+    const currentIndex = images.indexOf(currentImage);
+    const prevIndex = (currentIndex - 1 + images.length) % images.length;
+    setCurrentImage(images[prevIndex]);
+  };
   return (
     <div className="photo-carousel-container">
       <Slider
@@ -67,17 +77,17 @@ const PhotoCarousel = ({ images, length, onChange }) => {
         slidesToShow={6}
         responsive={[
           {
-            breakpoint: 480, // Задаємо breakpoint для екранів шириною менше 480px
+            breakpoint: 480, 
             settings: {
-              slidesToShow: 3 // Задаємо slidesToShow для екранів шириною менше 480px
-            }
+              slidesToShow: 3, 
+            },
           },
           {
-            breakpoint: 768, // Задаємо breakpoint для екранів шириною менше 768px
+            breakpoint: 768,
             settings: {
-              slidesToShow: 4 // Задаємо slidesToShow для екранів шириною менше 768px
-            }
-          }
+              slidesToShow: 4,
+            },
+          },
         ]}
       >
         {Array.from({ length }, (_, index) => (
@@ -100,6 +110,9 @@ const PhotoCarousel = ({ images, length, onChange }) => {
         isOpen={modalOpen}
         onClose={closeModal}
         imageName={currentImage}
+        onNext={handleNext}
+        onPrev={handlePrev}
+        CustomButton={CustomButton}
       />
     </div>
   );

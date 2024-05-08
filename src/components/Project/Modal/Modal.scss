@@ -12,18 +12,21 @@
 }
 
 .modal-content {
+  padding-top: 50px;
   width: 600px;
   background: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   position: relative;
+  padding-top: 25px;
 }
 
 .modal-content img {
   max-width: 100%;
   max-height: 80vh;
   border-radius: 4px;
+  
 }
 
 .close-button {
@@ -60,5 +63,61 @@
     right: 5px;
     padding: 6px 8px;
     font-size: 12px;
+  }
+}
+
+.custom-buttonn {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1;
+  background-color: rgba(0, 255, 255, 0);
+  background-color: #333;
+}
+
+.custom-buttonn p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.custom-buttonn-next,
+.custom-buttonn-prev {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-buttonn-next {
+  right: 10px;
+}
+
+.custom-buttonn-prev {
+  left: 10px;
+}
+
+.custom-buttonn-next:hover {
+  background-color: white;
+  p{
+    color: #333;
+  }
+}
+
+.custom-buttonn-prev:hover {
+  background-color: white;
+  p{
+    color: #333;
   }
 }
