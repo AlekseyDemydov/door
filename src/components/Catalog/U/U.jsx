@@ -70,6 +70,7 @@ const U = () => {
   };
 
   useEffect(() => {
+    handleColorSelect('alyaska');
     const nameDoor = () => {
       setSelectedName(imagesDoor['alyaska']);
     };

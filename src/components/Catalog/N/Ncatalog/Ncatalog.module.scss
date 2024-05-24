@@ -4,31 +4,28 @@
   gap: 20px;
   width: 90%;
   @media screen and (max-width: 480px) {
-    width: 110%;
-  grid-template-columns: repeat(2, 1fr);
-  
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .photoSliderImage {
-  width: 80%;
-  
+  width: 100%;
+  @media screen and (max-width: 480px) {
+    width: 90%;
+  }
 }
 .nameImg {
   display: flex;
   margin-right: 10px;
-  @media screen and (max-width: 480px) {
-    display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 90%;
-  }
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+    
 }
 .nameBox {
   margin-right: 10px;
-  border: 1px black solid ;
+  border: 1px black solid;
   padding: 5px;
-  width: 95px;
-  height: 35px;
+
 }
 .matched {
   position: relative;
@@ -36,8 +33,9 @@
   width: 95px;
   height: 35px;
 
-  &:before, &:after {
-    content: "";
+  &:before,
+  &:after {
+    content: '';
     position: absolute;
     border-top: 2px solid black;
     width: calc(100% + 5px); // Додаємо 2px для візуальної "перекресленості"
@@ -56,6 +54,5 @@
     transform-origin: right bottom;
     transform: rotate(-19deg);
   }
-
 }
 

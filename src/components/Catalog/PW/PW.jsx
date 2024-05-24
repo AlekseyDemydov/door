@@ -307,7 +307,7 @@ const imagesGlassz = {
 };
 
 const PW = () => {
-  const [selectedColor, setSelectedColor] = useState('Black');
+  const [selectedColor, setSelectedColor] = useState('white');
   const [selectedName, setSelectedName] = useState('');
   const [selectedImages, setSelectedImages] = useState('');
   const [selectedDoor, setSelectedDoor] = useState(null);
@@ -320,8 +320,9 @@ const PW = () => {
   };
 
   useEffect(() => {
+    handleColorSelect('White');
     const nameDoor = () => {
-      setSelectedName(imagesDoor['Black']);
+      setSelectedName(imagesDoor['White']);
     };
     nameDoor();
   }, []);

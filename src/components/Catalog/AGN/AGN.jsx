@@ -278,6 +278,7 @@ const АGN = () => {
   };
 
   useEffect(() => {
+    handleColorSelect('Black');
     const nameDoor = () => {
       setSelectedName(imagesDoor['Black']);
     };
@@ -345,6 +346,7 @@ const АGN = () => {
         <div>
         <div>
             <h3>СЕРІЇ</h3>
+            <div className={s.nameSerias}>
             <NavLink
               to="/door/catalog/ax"
               style={({ isActive }) => ({
@@ -411,6 +413,7 @@ const АGN = () => {
             >
               AGK
             </NavLink>
+            </div>
           </div>
           <div>
             <h3>КОЛІР</h3>

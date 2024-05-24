@@ -37,19 +37,6 @@ const AGcatalog = ({ images, nameDoor }) => {
 
   return (
     <div>
-      <div className={s.nameImg}>
-      {firstHalfNames.map((doorName, index) => {
-          const fileName = getFileNameWithoutExtension(doorName);
-          const matched = !matchedElements.includes(fileName); // Зміна тут
-          return (
-            <div key={index}>
-              <p className={`${s.nameBox} ${matched ? s.matched : ''}`}>
-                {fileName}
-              </p>
-            </div>
-          );
-        })}
-      </div>
       <div className={s.imgBox}>
         {firstHalfImages.map((image, index) => {
           return (
@@ -60,6 +47,20 @@ const AGcatalog = ({ images, nameDoor }) => {
           );
         })}
       </div>
+      <div className={s.nameImg}>
+      {firstHalfNames.map((doorName, index) => {
+          const fileName = getFileNameWithoutExtension(doorName);
+          const matched = !matchedElements.includes(fileName); 
+          return (
+            <div key={index}>
+              <p className={`${s.nameBox} ${matched ? s.matched : ''}`}>
+                {fileName}
+              </p>
+            </div>
+          );
+        })}
+      </div>
+      
     </div>
   );
 };

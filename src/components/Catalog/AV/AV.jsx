@@ -148,6 +148,7 @@ const AV = () => {
   };
 
   useEffect(() => {
+    handleColorSelect('Black');
     const nameDoor = () => {
       setSelectedName(imagesDoor['Black']);
     };
@@ -196,6 +197,7 @@ const AV = () => {
         <div className={s.leftSide}>
           <div>
             <h3>СЕРІЇ</h3>
+            <div className={s.nameSerias}>
             <NavLink
               to="/door/catalog/ax"
               style={({ isActive }) => ({
@@ -262,6 +264,7 @@ const AV = () => {
             >
               AGK
             </NavLink>
+            </div>
           </div>
           <div>
             <h3>КОЛІР</h3>

@@ -148,6 +148,7 @@ const N = () => {
   };
 
   useEffect(() => {
+    handleColorSelect('ds');
     const nameDoor = () => {
       setSelectedName(imagesDoor['dk']);
     };
@@ -196,6 +197,7 @@ const N = () => {
         <div className={s.leftSide}>
           <div>
             <h3>СЕРІЇ</h3>
+            <div className={s.nameSerias}>
             <NavLink
               to="/door/catalog/n"
               style={({ isActive }) => ({
@@ -218,6 +220,7 @@ const N = () => {
             >
               NA
             </NavLink>
+            </div>
           </div>
           <div>
             <h3>КОЛІР</h3>

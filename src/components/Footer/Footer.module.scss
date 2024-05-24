@@ -1,10 +1,6 @@
 footer {
-  background: linear-gradient(
-    109.6deg,
-    rgba(44, 44, 45, 0.8) 11.2%, /* Додана прозорість */
-    rgba(126, 124, 124, 0.8) 91.1% /* Додана прозорість */
-  );
-  color: white;
+  background: #b68743;
+  color: black;
   display: flex;
   padding: 50px;
   flex-direction: column;
@@ -29,13 +25,13 @@ footer {
 .number {
   font-size: 1.2rem;
   margin: 5px 0;
-  color: #fff; /* Змінено колір тексту на білий */
+  color: black;
   text-decoration: none;
   display: block;
 }
 
 .linkAdress {
-  color: #fff;
+  color: black;
   text-decoration: none;
   margin-top: 10px;
   display: block;

@@ -212,6 +212,14 @@
 }
 .imgBox {
 display: flex;
-align-items: center;
+// align-items: center;
 margin: 0 auto;
+}
+.nameSerias{
+  display: flex;
+  @media screen and (max-width: 480px) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  }
 }

@@ -162,6 +162,7 @@
 .seriasBox {
   padding-top: 55px;
   display: flex;
+  
   @media screen and (max-width: 480px) {
     padding: 15px;
   }
@@ -171,7 +172,7 @@
 }
 .serias {
   font-family: 'Gothic A1', sans-serif;
-  margin: 20px;
+  margin: 15px;
   padding: 15px;
   font-size: 30px;
   display: inline-block;
@@ -179,10 +180,12 @@
   letter-spacing: 1.5px;
   text-decoration: none;
   color: black;
+
+  
 }
 @media screen and (max-width: 480px) {
   .serias {
-    margin-left: 20px;
+    margin-left: 2px;
     padding: 5px;
     font-size: 20px;
   }
@@ -212,6 +215,14 @@
 }
 .imgBox {
 display: flex;
-align-items: center;
+// align-items: center;
 margin: 0 auto;
+}
+.nameSerias{
+  display: flex;
+  @media screen and (max-width: 480px) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  }
 }

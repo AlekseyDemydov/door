@@ -14,7 +14,7 @@
   // width: 50%; 
   height: 180px;
   &:hover {
-    background-color: rgba(92, 110, 243, 0.399);
+    background-color: #b6864398;
     color: white;
     cursor: pointer;
     .more {
@@ -38,9 +38,26 @@
   width: 100%; /* Змінено ширину на 100% для вирівнювання всередині блоку */
   padding: 15px 20px;
 }
-
+.cardListBig{
+  @media screen and (max-width: 480px){
+    height: 250px;
+  }
+}
 .imgCatalog {
-  width: 160px;
+  height: 100% ;
+}
+.imgCatalogBig{
+  @media screen and (max-width: 480px){
+    width: 160px;
+    height: 180px;
+    margin: auto;
+      }
+  
+}
+.imgCatalogS{
+  @media screen and (max-width: 480px){
+   display: flex;
+      }
 }
 
 .serias {

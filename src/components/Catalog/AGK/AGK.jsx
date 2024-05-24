@@ -68,6 +68,7 @@ const AGK = () => {
   };
 
   useEffect(() => {
+    handleColorSelect('lbb');
     const nameDoor = () => {
       setSelectedName(imagesDoor['lbb']);
     };
@@ -101,6 +102,7 @@ const AGK = () => {
         <div className={s.leftSide}>
           <div>
             <h3>СЕРІЇ</h3>
+            <div className={s.nameSerias}>
             <NavLink
               to="/door/catalog/ax"
               style={({ isActive }) => ({
@@ -167,6 +169,7 @@ const AGK = () => {
             >
               AGK
             </NavLink>
+            </div>
           </div>
           <div>
             <h3>СКЛО</h3>

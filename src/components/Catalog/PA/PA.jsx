@@ -42,13 +42,25 @@ const PA = () => {
         <div>
           <div>
             <h3>СЕРІЇ</h3>
-            <NavLink to="/door/catalog/pa" className={s.serias}>
+            <NavLink to="/door/catalog/pa" className={s.serias} style={({ isActive }) => ({
+                border: isActive
+                  ? '3px solid rgb(8, 7, 7)'
+                  : '1px solid rgb(8, 7, 7)',
+              })}>
               PA
             </NavLink>
-            <NavLink to="/door/catalog/pe" className={s.serias}>
+            <NavLink to="/door/catalog/pe" className={s.serias} style={({ isActive }) => ({
+                border: isActive
+                  ? '3px solid rgb(8, 7, 7)'
+                  : '1px solid rgb(8, 7, 7)',
+              })}>
               PE
             </NavLink>
-            <NavLink to="/door/catalog/m" className={s.serias}>
+            <NavLink to="/door/catalog/m" className={s.serias} style={({ isActive }) => ({
+                border: isActive
+                  ? '3px solid rgb(8, 7, 7)'
+                  : '1px solid rgb(8, 7, 7)',
+              })}>
               M
             </NavLink>
           </div>

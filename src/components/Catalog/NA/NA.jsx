@@ -112,6 +112,7 @@ const NA = () => {
   };
 
   useEffect(() => {
+    handleColorSelect('ds');
     const nameDoor = () => {
       setSelectedName(imagesDoor['dk']);
     };
@@ -147,28 +148,12 @@ const NA = () => {
 
   return (
     <>
-      {/* <div className={s.peregorodkibox}>
-        <div className={s.mainBOx}>
-          <h1 className={s.titleper}>МОДЕЛЬ АGN</h1>
-          <div>
-            <ul className={s.infolistper}>
-              <li className={s.infoper}>
-                Двері AGN – це витвір мистецтва та вишуканості. В інтер'єрному
-                просторі AGN це більше, ніж просто функціональний елемент, вони
-                доповнюють і формують естетичне зміст інтер'єру.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className={s.perslider}>
-          <img src={AGNmain} alt="" className={s.imgMainPa} />
-        </div>
-      </div>
-      <div className={s.bgHero}></div> */}
+     
       <div className={s.seriasBox}>
         <div>
         <div>
             <h3>СЕРІЇ</h3>
+            <div className={s.nameSerias}>
             <NavLink
               to="/door/catalog/n"
               style={({ isActive }) => ({
@@ -191,6 +176,8 @@ const NA = () => {
             >
               NA
             </NavLink>
+            </div>
+            
             
           </div>
           <div>

@@ -29,7 +29,7 @@ const Header = () => {
       {...settings}
       collapseOnSelect
       expand="lg"
-      bg="light"
+      style={{ backgroundColor: '#b68743' }}
       variant="light"
       className="shadow-sm"
       expanded={expanded}
@@ -42,14 +42,14 @@ const Header = () => {
           aria-controls="responsive-navbar-nav"
           onClick={() => setExpanded(!expanded)}
         />
-        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end" >
           <Nav activeKey={location.pathname}>
             <Nav.Link
               className={handlerActive('/door')}
               as={Link}
               to="/door"
               onClick={handleNavClick}
-              style={{borderBottom: handlerActive('/door') ? '1px solid rgb(8, 7, 7)' : ''}}
+              style={{fontWeight: 'bold', borderBottom: handlerActive('/door') ? '1px solid rgb(8, 7, 7)' : ''}}
             >
               Головна
             </Nav.Link>
@@ -58,7 +58,7 @@ const Header = () => {
               as={Link}
               to="/door/catalog"
               onClick={handleNavClick}
-              style={{borderBottom: location.pathname.includes('/door/catalog') ? '1px solid rgb(8, 7, 7)' : ''}}
+              style={{fontWeight: 'bold', borderBottom: location.pathname.includes('/door/catalog') ? '1px solid rgb(8, 7, 7)' : ''}}
             >
               Каталог
             </Nav.Link>
@@ -67,7 +67,7 @@ const Header = () => {
               as={Link}
               to="/door/system"
               onClick={handleNavClick}
-              style={{borderBottom: location.pathname.includes('/door/system') ? '1px solid rgb(8, 7, 7)' : ''}}
+              style={{fontWeight: 'bold', borderBottom: location.pathname.includes('/door/system') ? '1px solid rgb(8, 7, 7)' : ''}}
             >
               Системи відкривання
             </Nav.Link>
@@ -76,7 +76,7 @@ const Header = () => {
               as={Link}
               to="/door/projects"
               onClick={handleNavClick}
-              style={{borderBottom: location.pathname.includes('/door/projects') ? '1px solid rgb(8, 7, 7)' : ''}}
+              style={{fontWeight: 'bold', borderBottom: location.pathname.includes('/door/projects') ? '1px solid rgb(8, 7, 7)' : ''}}
             >
               Проекти
             </Nav.Link>
@@ -85,7 +85,7 @@ const Header = () => {
               as={Link}
               to="/door/contacts"
               onClick={handleNavClick}
-              style={{borderBottom: location.pathname.includes('/door/contacts') ? '1px solid rgb(8, 7, 7)' : ''}}
+              style={{fontWeight: 'bold', borderBottom: location.pathname.includes('/door/contacts') ? '1px solid rgb(8, 7, 7)' : ''}}
             >
               Контакти
             </Nav.Link>

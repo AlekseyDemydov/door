@@ -1,16 +1,16 @@
 .imgBox {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 5px;
   width: 90%;
   @media screen and (max-width: 480px) {
-    width: 110%;
+    width: 100%;
   grid-template-columns: repeat(2, 1fr);
   
   }
 }
 .photoSliderImage {
-  width: 80%;
+  width: 70%;
   
 }
 .nameImg {
@@ -24,7 +24,7 @@
   }
 }
 .nameBox {
-  margin-right: 10px;
+  margin-right: 5px;
   border: 1px black solid ;
   padding: 5px;
   width: 95px;

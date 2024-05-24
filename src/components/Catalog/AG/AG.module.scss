@@ -182,7 +182,7 @@
 }
 @media screen and (max-width: 480px) {
   .serias {
-    margin-left: 20px;
+    margin-left: 5px;
     padding: 5px;
     font-size: 20px;
   }
@@ -214,4 +214,13 @@
 display: flex;
 align-items: center;
 margin: 0 auto;
+}
+.nameSerias{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  @media screen and (max-width: 480px) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px;
+  }
 }

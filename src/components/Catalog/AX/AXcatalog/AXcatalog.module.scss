@@ -6,7 +6,7 @@
   @media screen and (max-width: 480px) {
     width: 110%;
   grid-template-columns: repeat(2, 1fr);
-  
+  gap: 5px;
   }
 }
 .photoSliderImage {
@@ -16,10 +16,11 @@
 .nameImg {
   display: flex;
   margin-right: 10px;
+  grid-template-columns: repeat(2, 1fr);
   @media screen and (max-width: 480px) {
     display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 10px;
   width: 90%;
   }
 }

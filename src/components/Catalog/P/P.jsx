@@ -138,6 +138,7 @@ const P = () => {
   };
 
   useEffect(() => {
+    handleColorSelect('White');
     const nameDoor = () => {
       setSelectedName(imagesDoor['Black']);
     };
@@ -179,6 +180,7 @@ const P = () => {
         <div className={s.leftSide}>
           <div>
             <h3>СЕРІЇ</h3>
+            <div className={s.nameSerias}>
             <NavLink to="/door/catalog/pw" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
               PW
             </NavLink>
@@ -191,6 +193,7 @@ const P = () => {
             <NavLink to="/door/catalog/u" style={({isActive})=>({border: isActive ? '3px solid rgb(8, 7, 7)':'1px solid rgb(8, 7, 7)'})} className={s.serias}>
               U
             </NavLink>
+            </div>
           </div>
           <div>
             <h3>КОЛІР</h3>

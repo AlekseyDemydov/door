@@ -31,6 +31,15 @@ const PMcatalog = ({ images, nameDoor }) => {
 
   return (
     <div>
+      <div className={s.imgBox}>
+        {firstHalfImages.map((image, index) => {
+          return (
+            <div key={index}>
+              <img src={image} alt="" className={s.photoSliderImage} />
+            </div>
+          );
+        })}
+      </div>
       <div className={s.nameImg}>
       {firstHalfNames.map((doorName, index) => {
           const fileName = getFileNameWithoutExtension(doorName);
@@ -44,15 +53,7 @@ const PMcatalog = ({ images, nameDoor }) => {
           );
         })}
       </div>
-      <div className={s.imgBox}>
-        {firstHalfImages.map((image, index) => {
-          return (
-            <div key={index}>
-              <img src={image} alt="" className={s.photoSliderImage} />
-            </div>
-          );
-        })}
-      </div>
+      
     </div>
   );
 };

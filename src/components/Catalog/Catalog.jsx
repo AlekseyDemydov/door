@@ -26,7 +26,10 @@ const Catalog = () => {
           </NavLink>
           </div>
         </div>
+        <NavLink to="/door/catalog/pa" className={s.imgCatalog}>
         <img src={p1} alt="p1" className={s.imgCatalog} />
+          </NavLink>
+        
       </div>
       <div className={s.cardBox}>
         <div className={s.cardList}>
@@ -48,10 +51,12 @@ const Catalog = () => {
           </NavLink>
           </div>
         </div>
+        <NavLink to="/door/catalog/pw" className={s.imgCatalog}>
         <img src={p2} alt="kolFarb" className={s.imgCatalog} />
+        </NavLink>
       </div>
-      <div className={s.cardBox}>
-        <div className={s.cardList}>
+      <div className={`${s.cardBox} ${s.cardListBig}`}>
+        <div className={s.cardList }>
           <h5 className={s.listTitle}>
           Колекції скляних міжкімнатних дверей в алюмінієвому профілі
           </h5>
@@ -76,7 +81,9 @@ const Catalog = () => {
           </NavLink>
           </div>
         </div>
-        <img src={p3} alt="kolFarb" className={s.imgCatalog} />
+        <NavLink to="/door/catalog/ax" className={`${s.imgCatalog} ${s.imgCatalogS}`}>
+        <img src={p3} alt="kolFarb" className={`${s.imgCatalogBig} ${s.imgCatalog}  `} />
+        </NavLink>
       </div>
       <div className={s.cardBox}>
         <div className={s.cardList}>
@@ -92,7 +99,9 @@ const Catalog = () => {
           </NavLink>
           </div>
         </div>
+        <NavLink to="/door/catalog/n">
         <img src={p4} alt="kolFarb" className={s.imgCatalog} />
+        </NavLink>
       </div>
       <div className={s.cardBox}>
         <div className={s.cardList}>
@@ -108,7 +117,9 @@ const Catalog = () => {
           </NavLink>
           </div>
         </div>
+        <NavLink to="/door/peregorodki" className={s.imgCatalog} >
         <img src={p5} alt="kolFarb" className={s.imgCatalog} />
+        </NavLink>
       </div>
     </div>
   );

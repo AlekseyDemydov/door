@@ -12,13 +12,7 @@ const Ucatalog = ({ images, nameDoor }) => {
     const fileNameWithoutExtension = fileNameWithExtension.replace(/_/g, ' ');
     return fileNameWithoutExtension.slice(0, 5);
   };
-  // const getFileNameWithoutExtension = filePath => {
-  //   if (!filePath) return '';
-  //   const fileNameWithExtension = filePath.split('/').pop(); // Отримуємо ім'я файлу з розширенням
-  //   const fileNameWithoutExtension = fileNameWithExtension.replace(/\.[^/.]+$/, ''); // Відділяємо ім'я від розширення
-  //   const sanitizedFileName = fileNameWithoutExtension.replace('_', ' '); // Замінюємо символи "_" на пробіли
-  //   return sanitizedFileName;
-  // };
+
 
   const halfLength = Math.ceil(images.length / 2);
   const firstHalfImages = images.slice(0, halfLength);
@@ -35,6 +29,15 @@ const Ucatalog = ({ images, nameDoor }) => {
 
   return (
     <div>
+      <div className={s.imgBox}>
+        {firstHalfImages.map((image, index) => {
+          return (
+            <div key={index}>
+              <img src={image} alt="" className={s.photoSliderImage} />
+            </div>
+          );
+        })}
+      </div>
       <div className={s.nameImg}>
       {firstHalfNames.map((doorName, index) => {
           const fileName = getFileNameWithoutExtension(doorName);
@@ -48,15 +51,7 @@ const Ucatalog = ({ images, nameDoor }) => {
           );
         })}
       </div>
-      <div className={s.imgBox}>
-        {firstHalfImages.map((image, index) => {
-          return (
-            <div key={index}>
-              <img src={image} alt="" className={s.photoSliderImage} />
-            </div>
-          );
-        })}
-      </div>
+      
     </div>
   );
 };

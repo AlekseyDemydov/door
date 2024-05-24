@@ -210,6 +210,10 @@
     margin: 0 auto;
   }
 }
-// .imgBox {
-//  width: 70%;
-// }
+.nameSerias{
+  display: flex;
+  @media screen and (max-width: 480px) {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  }
+}
