@@ -34,13 +34,17 @@
 }
 .bigPhoto {
   width: 25%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
   @media screen and (min-width: 320px) and (max-width: 480px) { /* Адаптація для мобільних пристроїв */
     display: none;
   }
 }
 .imgBigPhoto {
-  width: 100%;
-  height: 250px;
+  // width: 100%;
+  height: 100%;
+  display: flex;
 
   
 }
