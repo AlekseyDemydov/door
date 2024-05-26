@@ -1,6 +1,10 @@
 .photo-carousel-container {
   padding: 20px;
   width: auto;
+  @media screen and (max-width:480px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .slick-track {
@@ -16,6 +20,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  
 }
 
 .photo-slider-image {
