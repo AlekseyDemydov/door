@@ -11,115 +11,118 @@ const Catalog = () => {
     <div className={s.catalog}>
       <div className={s.cardBox}>
         <div className={s.cardList}>
-          <h5 className={s.listTitle}>
-            Колекції під фарбування та приховані короба
-          </h5>
+          <NavLink to="/door/catalog/pa" className={s.linkCatalog}>
+            <h5 className={s.listTitle}>
+              Колекції під фарбування та приховані короба
+            </h5>
+          </NavLink>
           <div className={s.serias}>
-          <NavLink to="/door/catalog/pa" className={s.more}>
-            Серія PA
-          </NavLink>
-          <NavLink to="/door/catalog/pe" className={s.more}>
-            Серія PE
-          </NavLink>
-          <NavLink to="/door/catalog/m" className={s.more}>
-            Серія M
-          </NavLink>
+            <NavLink to="/door/catalog/pa" className={s.more}>
+              Серія PA
+            </NavLink>
+            <NavLink to="/door/catalog/pe" className={s.more}>
+              Серія PE
+            </NavLink>
+            <NavLink to="/door/catalog/m" className={s.more}>
+              Серія M
+            </NavLink>
           </div>
         </div>
-        <NavLink to="/door/catalog/pa" className={s.imgCatalog}>
+
         <img src={p1} alt="p1" className={s.imgCatalog} />
-          </NavLink>
-        
       </div>
       <div className={s.cardBox}>
         <div className={s.cardList}>
-          <h5 className={s.listTitle}>
-          Колекції фарбованих дверей
-          </h5>
+          <NavLink to="/door/catalog/pw" className={s.linkCatalog}>
+            <h5 className={s.listTitle}>Колекції фарбованих дверей</h5>
+          </NavLink>
           <div className={s.serias}>
-          <NavLink to="/door/catalog/pw" className={s.more}>
-            Серія PW
-          </NavLink>
-          <NavLink to="/door/catalog/pm" className={s.more}>
-            Серія PM
-          </NavLink>
-          <NavLink to="/door/catalog/p" className={s.more}>
-            Серія P
-          </NavLink>
-          <NavLink to="/door/catalog/u" className={s.more}>
-            Серія U
-          </NavLink>
+            <NavLink to="/door/catalog/pw" className={s.more}>
+              Серія PW
+            </NavLink>
+            <NavLink to="/door/catalog/pm" className={s.more}>
+              Серія PM
+            </NavLink>
+            <NavLink to="/door/catalog/p" className={s.more}>
+              Серія P
+            </NavLink>
+            <NavLink to="/door/catalog/u" className={s.more}>
+              Серія U
+            </NavLink>
           </div>
         </div>
-        <NavLink to="/door/catalog/pw" className={s.imgCatalog}>
+
         <img src={p2} alt="kolFarb" className={s.imgCatalog} />
-        </NavLink>
       </div>
       <div className={`${s.cardBox} ${s.cardListBig}`}>
-        <div className={s.cardList }>
-          <h5 className={s.listTitle}>
-          Колекції скляних міжкімнатних дверей в алюмінієвому профілі
-          </h5>
+        <div className={s.cardList}>
+          <NavLink to="/door/catalog/ax" className={s.linkCatalog}>
+            <h5 className={s.listTitle}>
+              Колекції скляних міжкімнатних дверей в алюмінієвому профілі
+            </h5>
+          </NavLink>
           <div className={s.serias}>
-          <NavLink to="/door/catalog/ax" className={s.more}>
-            Серія AX
-          </NavLink>
-          <NavLink to="/door/catalog/av" className={s.more}>
-            Серія AV
-          </NavLink>
-          <NavLink to="/door/catalog/ag" className={s.more}>
-            Серія AG
-          </NavLink>
-          <NavLink to="/door/catalog/agn" className={s.more}>
-            Серія AGN
-          </NavLink>
-          <NavLink to="/door/catalog/agp" className={s.more}>
-            Серія AGP
-          </NavLink>
-          <NavLink to="/door/catalog/agk" className={s.more}>
-            Серія AGK
-          </NavLink>
+            <NavLink to="/door/catalog/ax" className={s.more}>
+              Серія AX
+            </NavLink>
+            <NavLink to="/door/catalog/av" className={s.more}>
+              Серія AV
+            </NavLink>
+            <NavLink to="/door/catalog/ag" className={s.more}>
+              Серія AG
+            </NavLink>
+            <NavLink to="/door/catalog/agn" className={s.more}>
+              Серія AGN
+            </NavLink>
+            <NavLink to="/door/catalog/agp" className={s.more}>
+              Серія AGP
+            </NavLink>
+            <NavLink to="/door/catalog/agk" className={s.more}>
+              Серія AGK
+            </NavLink>
           </div>
         </div>
-        <NavLink to="/door/catalog/ax" className={`${s.imgCatalog} ${s.imgCatalogS}`}>
-        <img src={p3} alt="kolFarb" className={`${s.imgCatalogBig} ${s.imgCatalog}  `} />
-        </NavLink>
+        <div className={` ${s.imgCatalogS}`}>
+          <img
+            src={p3}
+            alt="kolFarb"
+            className={`${s.imgCatalogBig} ${s.imgCatalog}  `}
+          />
+        </div>
       </div>
       <div className={s.cardBox}>
         <div className={s.cardList}>
-          <h5 className={s.listTitle}>
-          Колекції з дерев’яним покриттям
-          </h5>
+          <NavLink to="/door/catalog/n" className={s.linkCatalog}>
+            <h5 className={s.listTitle}>Колекції з дерев’яним покриттям</h5>
+          </NavLink>
           <div className={s.serias}>
-          <NavLink to="/door/catalog/n" className={s.more}>
-            Серія N
-          </NavLink>
-          <NavLink to="/door/catalog/na" className={s.more}>
-            Серія NA
-          </NavLink>
+            <NavLink to="/door/catalog/n" className={s.more}>
+              Серія N
+            </NavLink>
+            <NavLink to="/door/catalog/na" className={s.more}>
+              Серія NA
+            </NavLink>
           </div>
         </div>
-        <NavLink to="/door/catalog/n">
+
         <img src={p4} alt="kolFarb" className={s.imgCatalog} />
-        </NavLink>
       </div>
       <div className={s.cardBox}>
         <div className={s.cardList}>
-          <h5 className={s.listTitle}>
-      Розсувні алюмінієві перегородки
-          </h5>
+          <NavLink to="/door/peregorodki" className={s.linkCatalog}>
+            <h5 className={s.listTitle}>Розсувні алюмінієві перегородки</h5>
+          </NavLink>
           <div className={s.serias}>
-          <NavLink to="/door/peregorodki" className={s.more}>
-          Каскад
-          </NavLink>
-          <NavLink to="/door/peregorodki" className={s.more}>
-          Класичне відкриття
-          </NavLink>
+            <NavLink to="/door/peregorodki" className={s.more}>
+              Каскад
+            </NavLink>
+            <NavLink to="/door/peregorodki" className={s.more}>
+              Класичне відкриття
+            </NavLink>
           </div>
         </div>
-        <NavLink to="/door/peregorodki" className={s.imgCatalog} >
+
         <img src={p5} alt="kolFarb" className={s.imgCatalog} />
-        </NavLink>
       </div>
     </div>
   );

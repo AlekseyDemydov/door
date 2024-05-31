@@ -1,7 +1,7 @@
 .btnPrev {
     position: absolute;
     top: 490px;
-    right: 770px;
+    right: 420px;
     background-image: url(../../Home/img/Vlevo.png);
     background-repeat: no-repeat ;
     background-size: contain ;
@@ -26,7 +26,7 @@
 
   .btnNext {
     position: absolute;
-    right: 420px;
+    right: 45px;
     top: 490px;
     background-image: url(../../Home/img/vpravo.png);
     background-repeat: no-repeat ;
@@ -50,10 +50,11 @@
     stroke: white;
   }
   .carSlider{
+    width: 600px;
     @media (min-width: 481px) and (max-width: 768px){
       max-width: 450px;
     }
     @media screen and (max-width: 480px) {
-      max-width: 450px;
+     width: 380px;
     }
   }

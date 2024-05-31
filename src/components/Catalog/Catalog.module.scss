@@ -54,6 +54,10 @@
       }
   
 }
+.linkCatalog{
+  color: black;
+  list-style: none;
+}
 .imgCatalogS{
   @media screen and (max-width: 480px){
    display: flex;

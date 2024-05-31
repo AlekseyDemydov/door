@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import logo from './img/logodoorr.jpg'
 import s from './Header.module.scss'
+import './Header.css'
 
 const Header = () => {
   const location = useLocation();
@@ -29,13 +30,13 @@ const Header = () => {
       {...settings}
       collapseOnSelect
       expand="lg"
-      style={{ backgroundColor: '#b68743' }}
+      style={{ backgroundColor: '#b68743', padding: 0, fontFamily: 'Lora, sans-serif' }}
       variant="light"
       className="shadow-sm"
       expanded={expanded}
     >
       <Container>
-        <Navbar.Brand className="fs-1" as={Link} to="/door">
+        <Navbar.Brand className="fs-1 linkLogo" as={Link} to="/door">
           <img src={logo} alt="logo" className={s.logomain} />
         </Navbar.Brand>
         <Navbar.Toggle
